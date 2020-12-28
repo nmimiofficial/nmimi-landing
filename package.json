@@ -1,0 +1,22 @@
+{
+  "name": "nmimi-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camphan12993/nmimi-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camphan12993/nmimi-landing/issues"
+  },
+  "homepage": "https://github.com/camphan12993/nmimi-landing#readme"
+}
