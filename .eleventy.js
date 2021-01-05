@@ -1,8 +1,7 @@
 const htmlmin = require('html-minifier');
 
-module.exports = function(eleventyConfig) {
-
-  // html minify
+module.exports = function (config) {
+	// html minify
 	if (process.env.NODE_ENV == 'production') {
 		config.addTransform('htmlmin', function (content, outputPath) {
 			if (outputPath.endsWith('.html')) {
@@ -19,15 +18,15 @@ module.exports = function(eleventyConfig) {
 
 			return content;
 		});
-  }
-  
-  eleventyConfig.addPassthroughCopy("src/assets/images");
-  return {
-    passthroughFileCopy: true,
-    markdownTemplateEngine: "njk",
-    templateFormats: ["html", "njk", "md"],
-    dir: {
-      input: "src"
-    }
-  }
-}
+	}
+
+	config.addPassthroughCopy('src/assets/images');
+	return {
+		passthroughFileCopy: true,
+		markdownTemplateEngine: 'njk',
+		templateFormats: ['html', 'njk', 'md'],
+		dir: {
+			input: 'src',
+		},
+	};
+};
