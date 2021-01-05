@@ -5,12 +5,58 @@
   --secondary: #3a3a3c;
 }
 
+.container {
+  max-width: 1024px;
+}
+
 .slider {
-  padding-bottom: 150%;
+  padding-bottom: 120%;
+}
+
+.featured-slider {
+  padding-bottom: 120%;
+}
+
+.collection-item.mobile {
+  padding-bottom: 120%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  columns: 1;
+  column-gap: 1rem;
+  column-fill: initial;
+}
+
+@screen sm {
+  .featured-slider {
+    padding-bottom: 60%;
+  }
+
+  .gallery {
+    columns: 2;
+  }
 }
 @screen md {
   .slider {
-    padding-bottom: 0;
+    padding-bottom: 70%;
+  }
+
+  .featured-slider {
+    padding-bottom: 60%;
+  }
+  .gallery {
+    columns: 3;
+    column-gap: 1rem;
   }
 }
+
+@screen lg {
+  .featured-slider {
+    padding-bottom: 40%;
+  }
+}
+
 @tailwind utilities;
