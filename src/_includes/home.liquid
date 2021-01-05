@@ -1,0 +1,28 @@
+---
+layout: base.liquid
+---
+<div class="container px-6 md:px-10 md:flex md:flex-row pt-6 pb-10 h-screen">
+  <div class="flex flex-col justify-center md:pr-4 items-start mb-20 md:mb-0 md:w-1/2">
+    <h1 class="text-5xl font-semibold leading-tight">
+      {{ title }}
+    </h1>
+    <p class="text-lg text-gray-600 mb-10">
+      {{ description }}
+    </p>
+    <button class="bg-primary font-medium py-3 px-10">
+      {{ buttonText }}
+    </button>
+  </div>
+  <div class="slider relative md:w-1/2">
+    <div class="absolute inset-0 ">
+      <div class="swiper-container h-full overflow-hidden" style="border-top-left-radius: 80px;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('{{img1}}'); background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+          <div class="swiper-slide" style="background-image: url('{{img2}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+          <div class="swiper-slide" style="background-image: url('{{img3}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>

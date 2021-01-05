@@ -57,8 +57,8 @@ function stylesBuild() {
 
 // watch all files
 function watchFiles() {
-  gulp.watch("./src/assets/css/**/*", stylesBuild);
-  gulp.watch("./src/assets/js/**/*", jsBuild);
+  gulp.watch("./src/assets/*.css", stylesBuild);
+  gulp.watch("./src/assets/*.js", jsBuild);
 }
 
 const build = gulp.series(gulp.parallel(stylesBuild, jsBuild));

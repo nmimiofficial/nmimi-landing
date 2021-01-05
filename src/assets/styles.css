@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
+:root {
+  --primary: #f3ab1e;
+  --secondary: #3a3a3c;
+}
+
+.slider {
+  padding-bottom: 150%;
+}
+@screen md {
+  .slider {
+    padding-bottom: 0;
+  }
+}
 @tailwind utilities;
