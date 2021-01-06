@@ -1,75 +1,85 @@
 ---
 layout: base.liquid
+
 ---
-<div class="container md:flex md:flex-row pt-6 pb-60">
-  <div class="flex flex-col justify-center md:pr-4 items-start mb-20 md:mb-0 md:w-1/2">
-    <h1 class="text-5xl font-semibold leading-tight">
+<div class='container md:flex md:flex-row pt-6 pb-20'>
+  <div class='flex flex-col justify-center md:pr-4 items-start mb-20 md:mb-0 md:w-1/2'>
+    <h1 class='text-5xl font-semibold leading-tight'>
       {{ title }}
     </h1>
-    <p class="text-lg text-gray-600 mb-10">
+    <p class='text-lg text-gray-600 mb-10'>
       {{ description }}
     </p>
-    <button class="bg-primary font-medium py-3 px-10">
+    <button class='bg-primary font-medium py-3 px-10'>
       {{ buttonText }}
     </button>
   </div>
-  <div class="slider relative md:w-1/2">
-    <div class="absolute inset-0 ">
-      <div class="swiper-container h-full overflow-hidden" style="border-top-left-radius: 80px;">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('{{img1}}'); background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
-          <div class="swiper-slide" style="background-image: url('{{img2}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
-          <div class="swiper-slide" style="background-image: url('{{img3}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+  <div class='slider relative md:w-1/2'>
+    <div class='absolute inset-0 '>
+      <div class='swiper-container h-full overflow-hidden' style='border-top-left-radius: 80px;'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide' style='background-image: url("{{img1}}"); background-position: center; background-size: cover; background-repeat: no-repeat;'></div>
+          <div class='swiper-slide' style='background-image: url("{{img2}}");background-position: center; background-size: cover; background-repeat: no-repeat;'></div>
+          <div class='swiper-slide' style='background-image: url("{{img3}}");background-position: center; background-size: cover; background-repeat: no-repeat;'></div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class='swiper-pagination'></div>
       </div>
     </div>
   </div>
 </div>
 
-<section class="container pb-28">
-  <h2 class="text-5xl text-primary mb-3">Featured Products</h2>
-  <p class="text-3xl text-secondary mb-10">Explore</p>
-  <div class="featured-slider relative overflow-hidden">
-    <div class="absolute px-3 swiper-container1 w-full h-full">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide rounded-3xl shadow-xl bg-yellow-200"></div>
-        <div class="swiper-slide rounded-3xl shadow-xl bg-red-200"></div>
-        <div class="swiper-slide rounded-3xl shadow-xl bg-green-200"></div>
-        <div class="swiper-slide rounded-3xl shadow-xl bg-blue-300"></div>
+<!-- collection -->
+<section class='container pb-32'>
+  <div class='grid grid-cols-6 grid-rows-5 w-2/3 gap-4 m-auto'>
+    <div class='bg-yellow-200 col-start-1 col-end-4 row-start-1 row-end-4 rounded-xl shadow-md pb-full'></div>
+    <div class='bg-red-200 col-span-3 row-span-5 rounded-xl shadow-md'></div>
+    <div class='bg-blue-200 col-span-3 row-span-2 rounded-xl shadow-md'></div>
+  </div>
+
+</section>
+<section class='container pb-28'>
+  <h2 class='text-5xl text-primary mb-3'>Featured Products</h2>
+  <p class='text-3xl text-secondary mb-10'>Explore</p>
+  <div class='featured-slider relative overflow-hidden'>
+    <div class='absolute px-3 swiper-container1 w-full h-full'>
+      <div class='swiper-wrapper'>
+        <div class='swiper-slide rounded-3xl shadow-xl bg-yellow-200'></div>
+        <div class='swiper-slide rounded-3xl shadow-xl bg-red-200'></div>
+        <div class='swiper-slide rounded-3xl shadow-xl bg-green-200'></div>
+        <div class='swiper-slide rounded-3xl shadow-xl bg-blue-300'></div>
       </div>
       <!-- Add Pagination -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class='swiper-button-next'></div>
+      <div class='swiper-button-prev'></div>
     </div>
   </div>
 </section>
 
 <!-- gallery -->
-<section class="container pb-28">
-  <h2 class="text-5xl text-primary mb-10">Gallery</h2>
+<section class='container pb-28'>
+  <h2 class='text-5xl text-primary mb-10'>Gallery</h2>
   <!-- mobile -->
-  <div class="gallery">
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide1.jpg">
+  <div class='gallery'>
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide1.jpg'>
     </div>
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide4.jpg">
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide4.jpg'>
     </div>
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide2.jpg">
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide2.jpg'>
     </div>
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide3.jpg">
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide3.jpg'>
     </div>
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide6.jpg">
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide6.jpg'>
     </div>
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide1.jpg">
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide1.jpg'>
     </div>
-    <div class="inline-block relative mb-4">
-      <img alt="" class="rounded-lg w-full" src="/assets/images/slide5.jpg">
+    <div class='inline-block relative mb-4'>
+      <img alt='' class='rounded-lg w-full' src='/assets/images/slide5.jpg'>
     </div>
   </div>
   <!-- <div class="collection-item mobile relative rounded-3xl overflow-hidden hover:shadow-2xl transition duration-500" style="background-image: url('/assets/images/slide1.jpg');">
