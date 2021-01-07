@@ -1,7 +1,7 @@
 ---
 layout: base.liquid
 ---
-<div class="container md:flex md:flex-row pt-6 pb-60">
+<div class="container md:flex md:flex-row pt-6 pb-16">
   <div class="flex flex-col justify-center md:pr-4 items-start mb-20 md:mb-0 md:w-1/2">
     <h1 class="text-5xl font-semibold leading-tight">
       {{ title }}
@@ -9,13 +9,13 @@ layout: base.liquid
     <p class="text-lg text-gray-600 mb-10">
       {{ description }}
     </p>
-    <button class="bg-primary font-medium py-3 px-10">
+    <button class="bg-primary text-white font-medium py-3 px-10 rounded hover:shadow-md duration-500 transition">
       {{ buttonText }}
     </button>
   </div>
   <div class="slider relative md:w-1/2">
-    <div class="absolute inset-0 ">
-      <div class="swiper-container h-full overflow-hidden" style="border-top-left-radius: 80px;">
+    <div class="absolute w-full h-full ">
+      <div class="swiper-container h-full overflow-hidden rounded-3xl shadow-2xl">
         <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image: url('{{img1}}'); background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
           <div class="swiper-slide" style="background-image: url('{{img2}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
@@ -27,20 +27,96 @@ layout: base.liquid
   </div>
 </div>
 
+<div class="text-center pb-24">
+  <a href="#about">
+    <ion-icon class="text-primary text-4xl animate-bounce cursor-pointer hover:opacity-60 transition duration-300" name="chevron-down-outline"></ion-icon>
+  </a>
+</div>
+
+<!-- category -->
 <section class="container pb-28">
-  <h2 class="text-5xl text-primary mb-3">Featured Products</h2>
-  <p class="text-3xl text-secondary mb-10">Explore</p>
-  <div class="featured-slider relative overflow-hidden">
-    <div class="absolute px-3 swiper-container1 w-full h-full">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide rounded-3xl shadow-xl bg-yellow-200"></div>
-        <div class="swiper-slide rounded-3xl shadow-xl bg-red-200"></div>
-        <div class="swiper-slide rounded-3xl shadow-xl bg-green-200"></div>
-        <div class="swiper-slide rounded-3xl shadow-xl bg-blue-300"></div>
+  <div class="grid grid-cols-4 grid-rows-4 gap-4">
+    <div class="bg-yellow-200 overflow-hidden w-full pb-full col-span-2 rounded-2xl shadow-xl row-span-4 relative">
+      <img alt="" class="absolute w-full h-full  object-center object-cover" src="assets/images/shirt.jpg">
+      <div class="absolute w-full h-full z-10 bg-white bg-opacity-30 p-3">
+        <div class="rounded-xl w-full h-full flex items-center justify-center"></div>
+
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="relative overflow-hidden col-span-2 rounded-2xl shadow-xl row-span-2">
+      <img alt="" class="absolute w-full h-full  object-center object-cover" src="assets/images/shoes.jpg">
+      <div class="absolute w-full h-full z-10 bg-white bg-opacity-30 p-3">
+        <div class="rounded-xl w-full h-full flex items-center justify-center"></div>
+
+      </div>
+    </div>
+    <div class="relative overflow-hidden col-span-2 rounded-2xl shadow-xl row-span-2">
+      <img alt="" class="absolute w-full h-full  object-center object-cover" src="assets/images/skirt.jpg">
+      <div class="absolute w-full h-full z-10 bg-white bg-opacity-30 p-3">
+        <div class="rounded-xl w-full h-full flex items-center justify-center"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- event -->
+<section class="pb-32">
+  <img alt="" class="" src="/assets/images/sale.png">
+</section>
+
+<section class="container mb-32">
+  <h2 class="text-5xl text-primary text-center mb-6">Explore</h2>
+  <div class="text-center mb-20">
+    <button class="type-btn active rounded-md border-gray-400 border-2 px-4 py-2 mr-3">
+      New Arrival
+    </button>
+    <button class="type-btn rounded-md border-gray-400 border-2 px-4 py-2">
+      Best Seller
+    </button>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
+    </div>
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
+    </div>
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
+    </div>
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
+    </div>
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
+    </div>
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
+    </div>
+    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
+      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
+        Váy Ngắn
+      </div>
     </div>
   </div>
 </section>
@@ -73,7 +149,7 @@ layout: base.liquid
     </div>
   </div>
   <!-- <div class="collection-item mobile relative rounded-3xl overflow-hidden hover:shadow-2xl transition duration-500" style="background-image: url('/assets/images/slide1.jpg');">
-    <div class="absolute inset-0 bg-gray-300 opacity-30 flex flex-col items-center"></div>
+    <div class="absolute w-full h-full bg-gray-300 opacity-30 flex flex-col items-center"></div>
     <div class="absolute  inset-0 z-20 flex flex-col items-center justify-center">
       <h3 class="text-white text-3xl">
         Winter
