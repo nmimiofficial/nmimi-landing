@@ -66,15 +66,24 @@ layout: base.liquid
   <img alt="" class="rounded-3xl" src="/assets/images/sale.png">
 </section>
 
+<section class="collection container flex mb-32">
+  <div class="flex-1 pb-1/2 relative">
+    <div class="absolute inset-10">
+      <img src="/assets/images/slide1.jpg" class="z-10 absolute w-full h-full object-cover object-center rounded-2xl" alt="">
+      <div class="absolute left-10 top-10 w-full h-full bg-primary p-10 rounded-2xl opacity-30"></div>
+    </div>
+  </div>
+    <div class="flex-1 pl-20">
+      <h3 class="text-2xl mb-10">Fashion Collections</h3>
+      <p class="text-md font-light opacity-70 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque numquam ducimus eius sunt ea ratione tempore aliquid est? Dicta accusantium cumque debitis mollitia unde corporis laborum minima dolore inventore.</p>
+      <button class="text-secondary border rounded-md px-4 py-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">Explore More</button>
+    </div>
+</section>
+
 <section class="container mb-32">
-  <h2 class="text-5xl text-primary text-center mb-6">Explore</h2>
-  <div class="text-center mb-20">
-    <button data-filter="new-arrival" class="type-btn active rounded-md border-gray-400 border-2 px-4 py-2 mr-3">
-      New Arrival
-    </button>
-    <button data-filter="best-seller" class="type-btn rounded-md border-gray-400 border-2 px-4 py-2">
-      Best Seller
-    </button>
+  <div class="text-right mb-10">
+    <span class="mr-4 cursor-pointer hover:opacity-100 transition duration-300">New Arrival</span>
+    <span class="opacity-60 cursor-pointer hover:opacity-100 transition duration-300">Best Seller</span>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-10">
     <div class="item active new-arrival">
@@ -141,7 +150,7 @@ layout: base.liquid
 </section>
 
 <section class="container mb-32">
-  <h2 class="text-5xl text-primary text-center mb-12">Services</h2>
+  <h2 class="text-4xl text-primary text-center mb-12">Services</h2>
   <div class="flex justify-center">
     <div class="flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50">
       <ion-icon name="bicycle-outline" class="text-5xl mb-3 text-primary"></ion-icon>    
@@ -160,7 +169,7 @@ layout: base.liquid
 
 <!-- gallery -->
 <section class="container pb-28">
-  <h2 class="text-5xl text-primary mb-16">Gallery</h2>
+  <h2 class="text-4xl text-primary mb-16">Gallery</h2>
   <!-- mobile -->
   <div class="gallery mb-10">
     <div class="inline-block relative mb-4">
