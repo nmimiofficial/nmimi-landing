@@ -17,9 +17,9 @@ layout: base.liquid
     <div class="absolute w-full h-full ">
       <div class="swiper-container h-full overflow-hidden rounded-3xl shadow-2xl">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('{{img1}}'); background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
-          <div class="swiper-slide" style="background-image: url('{{img2}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
-          <div class="swiper-slide" style="background-image: url('{{img3}}');background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+          {% for slide in slides %}
+          <div class="swiper-slide" style="background-image: url('{{slide}}'); background-position: center; background-size: cover; background-repeat: no-repeat;"></div>
+          {% endfor %}
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -35,24 +35,24 @@ layout: base.liquid
 
 <!-- category -->
 <section class="container pb-28">
-  <div class="grid grid-cols-4 grid-rows-4 gap-4">
-    <div class="bg-yellow-200 overflow-hidden w-full pb-full col-span-2 rounded-2xl shadow-xl row-span-4 relative">
+  <div class="grid grid-cols-4 grid-rows-4 rounded-3xl overflow-hidden">
+    <div class="bg-yellow-200 overflow-hidden w-full pb-full col-span-2 row-span-4 relative">
       <img alt="" class="absolute w-full h-full  object-center object-cover" src="assets/images/shirt.jpg">
-      <div class="absolute w-full h-full z-10 bg-white bg-opacity-30 p-3">
+      <div class="absolute w-full h-full z-10 bg-white bg-opacity-20 p-3">
         <div class="rounded-xl w-full h-full flex items-center justify-center"></div>
 
       </div>
     </div>
-    <div class="relative overflow-hidden col-span-2 rounded-2xl shadow-xl row-span-2">
+    <div class="relative overflow-hidden col-span-2 row-span-2">
       <img alt="" class="absolute w-full h-full  object-center object-cover" src="assets/images/shoes.jpg">
-      <div class="absolute w-full h-full z-10 bg-white bg-opacity-30 p-3">
+      <div class="absolute w-full h-full z-10 bg-white bg-opacity-20 p-3">
         <div class="rounded-xl w-full h-full flex items-center justify-center"></div>
 
       </div>
     </div>
-    <div class="relative overflow-hidden col-span-2 rounded-2xl shadow-xl row-span-2">
+    <div class="relative overflow-hidden col-span-2 row-span-2">
       <img alt="" class="absolute w-full h-full  object-center object-cover" src="assets/images/skirt.jpg">
-      <div class="absolute w-full h-full z-10 bg-white bg-opacity-30 p-3">
+      <div class="absolute w-full h-full z-10 bg-white bg-opacity-20 p-3">
         <div class="rounded-xl w-full h-full flex items-center justify-center"></div>
 
       </div>
@@ -61,71 +61,107 @@ layout: base.liquid
 </section>
 
 <!-- event -->
-<section class="pb-32">
-  <img alt="" class="" src="/assets/images/sale.png">
+<section class="pb-32 container">
+  <img alt="" class="rounded-3xl" src="/assets/images/sale.png">
 </section>
 
 <section class="container mb-32">
   <h2 class="text-5xl text-primary text-center mb-6">Explore</h2>
   <div class="text-center mb-20">
-    <button class="type-btn active rounded-md border-gray-400 border-2 px-4 py-2 mr-3">
+    <button data-filter="new-arrival" class="type-btn active rounded-md border-gray-400 border-2 px-4 py-2 mr-3">
       New Arrival
     </button>
-    <button class="type-btn rounded-md border-gray-400 border-2 px-4 py-2">
+    <button data-filter="best-seller" class="type-btn rounded-md border-gray-400 border-2 px-4 py-2">
       Best Seller
     </button>
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-10">
+    <div class="item active new-arrival">
+      <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4" style="padding-bottom: 120%;">
+        <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+        <span class="z-20 absolute top-4 right-4 px-3 py-2 cursor-pointer leading-4 rounded-md bg-black bg-opacity-60 hover:opacity-60" id="trigger">
+          <ion-icon class="text-xl text-white" name="expand-outline"></ion-icon>
+        </span>
       </div>
+      <p class="text-md text-secondary font-semibold">Đầm chi đó</p>
+      <p class="text-md font-light opacity-60">id12124124</p>
     </div>
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
+    <div class="item active best-seller">
+      <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4" style="padding-bottom: 120%;">
+        <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+        <span class="z-20 absolute top-4 right-4 px-3 py-2 cursor-pointer leading-4 rounded-md bg-black bg-opacity-60 hover:opacity-60" id="trigger">
+          <ion-icon class="text-xl text-white" name="expand-outline"></ion-icon>
+        </span>
       </div>
+      <p class="text-xl text-center text-secondary font-semibold">Đầm chi đó</p>
+      <p class="text-md font-light text-center">id12124124</p>
     </div>
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
+    <div class="item active best-seller">
+      <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4" style="padding-bottom: 120%;">
+        <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+        <span class="z-20 absolute top-4 right-4 px-3 py-2 cursor-pointer leading-4 rounded-md bg-black bg-opacity-60 hover:opacity-60" id="trigger">
+          <ion-icon class="text-xl text-white" name="expand-outline"></ion-icon>
+        </span>
       </div>
+      <p class="text-xl text-center text-secondary font-semibold">Đầm chi đó</p>
+      <p class="text-md font-light text-center">id12124124</p>
     </div>
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
+    <div class="item active new-arrival">
+      <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4" style="padding-bottom: 120%;">
+        <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+        <span class="z-20 absolute top-4 right-4 px-3 py-2 cursor-pointer leading-4 rounded-md bg-black bg-opacity-60 hover:opacity-60" id="trigger">
+          <ion-icon class="text-xl text-white" name="expand-outline"></ion-icon>
+        </span>
       </div>
+      <p class="text-xl text-center text-secondary font-semibold">Đầm chi đó</p>
+      <p class="text-md font-light text-center">id12124124</p>
     </div>
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
+    <div class="item active best-seller">
+      <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4" style="padding-bottom: 120%;">
+        <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+        <span class="z-20 absolute top-4 right-4 px-3 py-2 cursor-pointer leading-4 rounded-md bg-black bg-opacity-60 hover:opacity-60" id="trigger">
+          <ion-icon class="text-xl text-white" name="expand-outline"></ion-icon>
+        </span>
       </div>
+      <p class="text-xl text-center text-secondary font-semibold">Đầm chi đó</p>
+      <p class="text-md font-light text-center">id12124124</p>
     </div>
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
+    <div class="item active new-arrival">
+      <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4" style="padding-bottom: 120%;">
+        <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
+        <span class="z-20 absolute top-4 right-4 px-3 py-2 cursor-pointer leading-4 rounded-md bg-black bg-opacity-60 hover:opacity-60" id="trigger">
+          <ion-icon class="text-xl text-white" name="expand-outline"></ion-icon>
+        </span>
       </div>
+      <p class="text-xl text-center text-secondary font-semibold">Đầm chi đó</p>
+      <p class="text-md font-light text-center">id12124124</p>
     </div>
-    <div class="clothing-item relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition" style="padding-bottom: 120%;">
-      <img alt="" class="absolute w-full h-full object-cover object-center" src="/assets/images/slide3.jpg">
-      <div class="absolute w-full -bottom-0 transform translate-y-full transition duration-500 bg-black bg-opacity-30 text-center py-3 text-white text-xl">
-        Váy Ngắn
-      </div>
+  </div>
+</section>
+
+<section class="container mb-32">
+  <h2 class="text-5xl text-primary text-center mb-12">Services</h2>
+  <div class="flex justify-center">
+    <div class="flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50">
+      <ion-icon name="bicycle-outline" class="text-5xl mb-3 text-primary"></ion-icon>    
+      <span class="text-secondary text-md opacity-60">Free Ship</span>
+    </div>
+    <div class="flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50">
+      <ion-icon name="call-outline" class="text-5xl mb-3 text-primary"></ion-icon>    
+      <span class="text-secondary text-md opacity-60">Free Consultation</span>
+    </div>
+    <div class="flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50">
+      <ion-icon name="cash-outline" class="text-5xl mb-3 text-primary"></ion-icon>    
+      <span class="text-secondary text-md opacity-60">Warranty</span>
     </div>
   </div>
 </section>
 
 <!-- gallery -->
 <section class="container pb-28">
-  <h2 class="text-5xl text-primary mb-10">Gallery</h2>
+  <h2 class="text-5xl text-primary mb-16">Gallery</h2>
   <!-- mobile -->
-  <div class="gallery">
+  <div class="gallery mb-10">
     <div class="inline-block relative mb-4">
       <img alt="" class="rounded-lg w-full" src="/assets/images/slide1.jpg">
     </div>
@@ -148,12 +184,19 @@ layout: base.liquid
       <img alt="" class="rounded-lg w-full" src="/assets/images/slide5.jpg">
     </div>
   </div>
-  <!-- <div class="collection-item mobile relative rounded-3xl overflow-hidden hover:shadow-2xl transition duration-500" style="background-image: url('/assets/images/slide1.jpg');">
-    <div class="absolute w-full h-full bg-gray-300 opacity-30 flex flex-col items-center"></div>
-    <div class="absolute  inset-0 z-20 flex flex-col items-center justify-center">
-      <h3 class="text-white text-3xl">
-        Winter
-      </h3>
-    </div>
-  </div> -->
+  <div class="flex justify-center">
+    <a href="" class="flex items-center hover:opacity-60 transition duration-400">
+      <span class="text-secondary">More</span>
+      <ion-icon class="text-primary text-4xl cursor-pointer ml-2" name="arrow-forward-outline">
+
+    </a>
+  </div>
 </section>
+
+
+<div class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h1>Hello, I am a modal!</h1>
+  </div>
+</div>
