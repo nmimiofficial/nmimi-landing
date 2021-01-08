@@ -31,3 +31,8 @@ for (let i = 0; i < sortBtn.length; i++) {
 		}
 	});
 }
+
+lightbox.option({
+	'resizeDuration': 200,
+	'wrapAround': true
+})
