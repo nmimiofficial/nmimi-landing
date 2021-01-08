@@ -62,22 +62,22 @@ layout: base.liquid
 
 <!-- event -->
 {% if event.open == true %}
-  <section class='pb-32 container'>
+  <section class='container'>
     <img alt='' class='rounded-3xl' src="{{event.image}}">
   </section>
 {% endif %}
 
 
-<section class='collection container flex' id='product-intro'>
-  <div class='flex-1 pb-1/2 relative'>
+<section class='collection container flex flex-wrap' id='product-intro'>
+  <div class='w-full pb-full mb-16 md:mb-0 md:flex-1 md:pb-1/2 relative'>
     <div class='absolute inset-10'>
       <img alt='' class='z-10 absolute w-full h-full object-cover object-center rounded-2xl' src='/assets/images/slide1.jpg'>
       <div class='absolute left-10 top-10 w-full h-full bg-primary p-10 rounded-2xl opacity-30'></div>
     </div>
   </div>
-  <div class='flex-1 pl-20'>
+  <div class='w-full md:flex-1 md:pl-20'>
     <h3 class='text-2xl mb-10'>Fashion Collections</h3>
-    <p class='text-md font-light opacity-70 mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque numquam ducimus eius sunt ea ratione tempore aliquid est? Dicta accusantium cumque debitis mollitia unde corporis laborum minima dolore inventore.</p>
+    <p class='text-md font-light opacity-70 mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque numquam ducimus eius sunt ea ratione tempore aliquid est? Dicta accusantium cumque debitis mollitia unde corporis laborum minima dolore inventore.</p>
     <a class='text-secondary border rounded-md px-4 py-2 border-secondary hover:bg-secondary hover:text-white transition duration-300' href='#products'>Explore More</a>
   </div>
 </section>
@@ -87,7 +87,7 @@ layout: base.liquid
     <span class='active mr-4' data-filter='new-arrival'>New Arrival</span>
     <span class='' data-filter='best-seller'>Best Seller</span>
   </div>
-  <div class='flex flex-wrap'>
+  <div class='flex flex-wrap' id='product-list'>
     {% for item in products %}
       <a class='product-item active cursor-default' href="{{item.images[0]}}" data-lightbox="{{item.id}}" data-filter="{{item.type}}">
         <div class='product-item-wrapper relative w-full bg-yellow-300 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition mb-4' style='padding-bottom: 120%;'>
@@ -110,16 +110,16 @@ layout: base.liquid
 
 <section class='container'>
   <h2 class='text-4xl text-primary text-center mb-12'>Services</h2>
-  <div class='flex justify-center'>
-    <div class='flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50'>
+  <div class='flex flex-wrap justify-center'>
+    <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-32 sm:h-32 mx-6 p-4 rounded-xl bg-yellow-50'>
       <ion-icon class='text-5xl mb-3 text-primary' name='bicycle-outline'></ion-icon>
       <span class='text-secondary text-md opacity-60'>Free Ship</span>
     </div>
-    <div class='flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50'>
+    <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-32 sm:h-32 mx-6 p-4 rounded-xl bg-yellow-50'>
       <ion-icon class='text-5xl mb-3 text-primary' name='call-outline'></ion-icon>
       <span class='text-secondary text-md opacity-60'>Free Consultation</span>
     </div>
-    <div class='flex flex-col items-center justify-center w-48 h-48 mx-6 p-4 rounded-xl bg-yellow-50'>
+    <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-32 sm:h-32 mx-6 p-4 rounded-xl bg-yellow-50'>
       <ion-icon class='text-5xl mb-3 text-primary' name='cash-outline'></ion-icon>
       <span class='text-secondary text-md opacity-60'>Warranty</span>
     </div>

@@ -11,7 +11,7 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 let sortBtn = document.querySelector('#filter-menu').children;
-let sortItem = document.querySelector('#products').children;
+let sortItem = document.querySelector('#product-list').children;
 
 for (let i = 0; i < sortBtn.length; i++) {
 	sortBtn[i].addEventListener('click', function () {
