@@ -1,140 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link href="/assets/styles.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Domine&family=Exo&display=swap" rel="stylesheet">  <style type="text/css">
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
-
-  </style>
-  <title>{{ pageTitle }}</title>
-</head>
-<body>
-  <header class="container h-20 top-0 left-0 right-0 z-50 flex justify-between py-6 bg-white">
-    <img class="h-full" src="/assets/images/logo.png" alt="logo" />
-    <div>
-      <a href="" class="text-gray-600 hover:opacity-80 transition duration-500 mr-5">
-        <ion-icon name="logo-facebook" class="text-xl"></ion-icon>
-      </a>
-      <a href="" class="text-gray-600 hover:opacity-80 transition duration-500 mr-5">
-        <ion-icon name="logo-instagram" class="text-xl"></ion-icon>
-      </a>
-      <a href="" class="text-gray-600 hover:opacity-80 transition duration-500">
-        <ion-icon name="logo-youtube" class="text-xl"></ion-icon>
-      </a>
-    </div>
-  </header>
-  <main>
-    {{ content | safe }}
-  </main>
-  <!-- Footer -->
-<footer class='bg-yellow-100 relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
-  <div class='container mx-auto max-w-screen-sm'>
-    <div class='text-center mb-10'>
-      <img class="h-8 inline-block" src="/assets/images/logo.png" alt="logo" />
-    </div>
-    <div class='flex flex-col mb-3 text-gray-500 italic font-light'>
-      <p>123 Ngo Gia Tu, Da Nang</p>
-      <p>1231412515</p>
-    </div>
-    <div class='copyrights'>
-      <p class='para text-gray-500 font-light'>
-        Copyright ©2020 All rights reserved
-        | Made by
-        <a href="#" class='text-primary hover:opacity-75'>
-          Rooster World
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <link href='https://unpkg.com/swiper/swiper-bundle.css' rel='stylesheet'>
+    <link href='https://unpkg.com/swiper/swiper-bundle.min.css' rel='stylesheet'>
+    <link href='/assets/styles.css' rel='stylesheet'>
+    <link href='/assets/lightbox.min.css' rel='stylesheet'>
+    <link href='https://fonts.gstatic.com' rel='preconnect'>
+    <link href='https://fonts.googleapis.com/css2?family=Domine&family=Exo&display=swap' rel='stylesheet'>
+    <title>{{ pageTitle }}</title>
+  </head>
+  <body>
+    <header class='container flex justify-between py-6 items-center bg-white'>
+      <div>
+        <a class='cursor-pointer' href='/'>
+          <img alt='logo' class='h-8' src='/assets/images/logo.png'/>
         </a>
-      </p>
-    </div>
-  </div>
-</footer>
-    
-  
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script>
-  var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    spaceBetween: 50,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-  var swiper1 = new Swiper('.swiper-container1', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-      }
-    });
-
-    var modal = document.querySelector(".modal");
-    var trigger = document.querySelector("#trigger");
-    var closeButton = document.querySelector(".close-button");
-
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-    }
-
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-    document.querySelectorAll('.type-btn').forEach(function(item) {
-      item.addEventListener('click', function(e) {
-        const type = e.target.getAttribute('data-filter');
-      document.querySelectorAll('.item:not(.'+type+')').forEach(function(e) {
-        e.classList.remove('active');
-      });
-      document.querySelectorAll('.item.'+type+'').forEach(function(e) {
-        e.classList.add('active');
-      });
-      item.classList.add('active')
-      document.querySelector('.type-btn:not([data-filter="'+type+'"])').classList.remove('active')
-      })
-    })
-
-    function toggleTypeBtn() {
-      document.querySelectorAll('.type-btn')
-    }
-</script> 
-</body>
+      </div>
+      <div class='socials'>
+        {% for item in socials %}
+          <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mr-5'>
+            <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
+          </a>
+        {% endfor %}
+      </div>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <!-- Footer -->
+    <footer class='bg-yellow-100 relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
+      <div class='container mx-auto max-w-screen-sm'>
+        <div class='text-center mb-10'>
+          <img alt='logo' class='h-8 inline-block' src='/assets/images/logo.png'/>
+        </div>
+        <div class='flex flex-col mb-3 text-gray-500 italic font-light'>
+          <p>123 Ngo Gia Tu, Da Nang</p>
+          <p>1231412515</p>
+        </div>
+        <div class='copyrights'>
+          <p class='para text-gray-500 font-light'>
+            Copyright ©2020 All rights reserved | Made by
+            <a class='text-primary hover:opacity-75' href='#'>
+              Rooster World
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
+    <script src='https://unpkg.com/swiper/swiper-bundle.js'></script>
+    <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+    <script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
+    <script src='/assets/lightbox-plus-jquery.min.js'></script>
+    <script src='/assets/main.js'></script>
+  </body>
 </html>

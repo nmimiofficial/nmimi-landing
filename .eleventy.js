@@ -21,6 +21,9 @@ module.exports = function (config) {
 	}
 
 	config.addPassthroughCopy('src/assets/images');
+	config.addPassthroughCopy('src/assets/lightbox-plus-jquery.min.js');
+	config.addPassthroughCopy('src/assets/lightbox.min.css');
+	config.addPassthroughCopy({'src/assets/lightbox' : 'images'});
 	return {
 		passthroughFileCopy: true,
 		markdownTemplateEngine: 'njk',

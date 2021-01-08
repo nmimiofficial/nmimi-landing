@@ -8,10 +8,19 @@
 html,
 body {
 	font-family: 'Exo', sans-serif;
+	font-size: 14px;
+	scroll-behavior: smooth;
 }
 
 .container {
 	max-width: 1280px;
+}
+section {
+	@apply py-16
+}
+
+.socials > a:last-child {
+	margin-right: 0 !important;
 }
 
 .slider {
@@ -35,37 +44,44 @@ body {
 	column-fill: initial;
 }
 
-.type-btn.active,
-.type-btn:hover {
-	@apply bg-primary text-white border-primary transition duration-500;
+.gallery > a {
+	cursor: zoom-in;
 }
 
-.clothing-item:hover img {
+#filter-menu > span {
+	@apply cursor-pointer opacity-60 hover:opacity-100 transition duration-300;
+}
+
+#filter-menu > span.active {
+	@apply opacity-100;
+}
+
+.product-item-wrapper:hover img {
 	@apply transform scale-110;
 }
 
-.clothing-item img {
+.product-item-wrapper img {
 	@apply transition duration-500 ease-in-out;
 }
 
-.clothing-item span {
+.product-item-wrapper span {
 	transform: translateX(200%);
 	transition: transform ease-in-out 0.5s, opacity ease-in-out 0.3s;
 }
-.clothing-item:hover span {
+.product-item-wrapper:hover span {
 	transform: translateX(0);
 }
-
-.item {
-	opacity: 0;
-	visibility: hidden;
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s;
+.product-item-wrapper:hover .description {
+	opacity: 100;
 }
 
-.item.active {
-	opacity: 1;
-	visibility: visible;
-	transition: visibility 0s linear 0s, opacity 0.25s 0s;
+#products .product-item.active {
+	@apply w-1/3 p-4 overflow-visible;
+}
+#products .product-item {
+	width: 0%;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
 }
 
 @screen sm {
@@ -91,46 +107,6 @@ body {
 	}
 }
 
-.modal {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	opacity: 0;
-	visibility: hidden;
-	transform: scale(1.1);
-	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-.modal-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: white;
-	padding: 1rem 1.5rem;
-	width: 24rem;
-	border-radius: 0.5rem;
-}
-.close-button {
-	float: right;
-	width: 1.5rem;
-	line-height: 1.5rem;
-	text-align: center;
-	cursor: pointer;
-	border-radius: 0.25rem;
-	background-color: lightgray;
-}
-.close-button:hover {
-	background-color: darkgray;
-}
-.show-modal {
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1);
-	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
 
 @screen lg {
 	.featured-slider {
