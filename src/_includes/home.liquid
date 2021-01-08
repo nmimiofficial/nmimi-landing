@@ -111,18 +111,12 @@ layout: base.liquid
 <section class='container'>
   <h2 class='text-4xl text-primary text-center mb-12'>Services</h2>
   <div class='flex flex-wrap justify-center'>
-    <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-32 sm:h-32 mx-6 p-4 rounded-xl bg-yellow-50'>
-      <ion-icon class='text-5xl mb-3 text-primary' name='bicycle-outline'></ion-icon>
-      <span class='text-secondary text-md opacity-60'>Free Ship</span>
-    </div>
-    <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-32 sm:h-32 mx-6 p-4 rounded-xl bg-yellow-50'>
-      <ion-icon class='text-5xl mb-3 text-primary' name='call-outline'></ion-icon>
-      <span class='text-secondary text-md opacity-60'>Free Consultation</span>
-    </div>
-    <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-32 sm:h-32 mx-6 p-4 rounded-xl bg-yellow-50'>
-      <ion-icon class='text-5xl mb-3 text-primary' name='cash-outline'></ion-icon>
-      <span class='text-secondary text-md opacity-60'>Warranty</span>
-    </div>
+    {% for item in services %}
+      <div class='flex flex-col items-center justify-center w-full mb-4 sm:w-36 sm:h-36 md:w-48 md:h-48 md:mx-4 sm:mx-2 p-4 rounded-xl bg-yellow-50'>
+        <ion-icon class='text-3xl sm:text-4xl md:text-5xl mb-3 text-primary' name='{{item.icon}}'></ion-icon>
+        <span class='text-secondary text-md opacity-60'>{{item.name}}</span>
+      </div>
+    {% endfor %}
   </div>
 </section>
 

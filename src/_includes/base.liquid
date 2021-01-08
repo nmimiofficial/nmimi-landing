@@ -12,18 +12,64 @@
     <title>{{ pageTitle }}</title>
   </head>
   <body>
-    <header class='container flex justify-between py-6 items-center bg-white'>
+    <header class='container flex justify-between py-6 items-baseline bg-white'>
       <div>
         <a class='cursor-pointer' href='/'>
           <img alt='logo' class='h-8' src='/assets/images/logo.png'/>
         </a>
       </div>
-      <div class='socials'>
+      <ul class='hidden sm:flex'>
+        <li class='px-4'>
+          <a class='hover:text-primary transition duration-300' href='#products'>Collections</a>
+        </li>
+        <li class='px-4'>
+          <a class='hover:text-primary transition duration-300' href='/gallery'>Gallery</a>
+        </li>
+        <li class='px-4'>
+          <a class='hover:text-primary transition duration-300' href='#services'>Services</a>
+        </li>
+        <li class='px-4'>
+          <a class='hover:text-primary transition duration-300' href='#services'>Contact</a>
+        </li>
+      </ul>
+      <div class='hidden sm:block socials'>
         {% for item in socials %}
           <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mr-5'>
             <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
           </a>
         {% endfor %}
+      </div>
+      <button class='hover:opacity-60 sm:hidden text-secondary transition duration-300 outline-none focus:outline-none' onclick='toggleMenu()'>
+        <ion-icon class='text-2xl' name='menu-outline'></ion-icon>
+      </button>
+
+      <div class='fixed overlay-menu inset-0' id='nav-menu' style='z-index: 9999;'>
+        <div class='absolute flex flex-col items-center justify-center inset-0' id='nav-menu-wrapper'>
+          <button aria-label='Close Menu' class='absolute right-0 top-0 p-1 transition duration-300 text-secondary opacity-75 hover:opacity-50 focus:outline-none' onclick='toggleMenu()' style='margin-right:24px;margin-top:24px'>
+            <ion-icon class='text-3xl' name='close-outline'></ion-icon>
+          </button>
+          <ul class='mb-6' id='nav-item'>
+            <li class='px-4 py-2'>
+              <a class='hover:text-primary transition duration-300' href='#products' onclick='toggleMenu()'>Collections</a>
+            </li>
+            <li class='px-4 py-2'>
+              <a class='hover:text-primary transition duration-300' href='/gallery'>Gallery</a>
+            </li>
+            <li class='px-4 py-2'>
+              <a class='hover:text-primary transition duration-300' href='#services'>Services</a>
+            </li>
+            <li class='px-4 py-2'>
+              <a class='hover:text-primary transition duration-300' href='#services'>Contact</a>
+            </li>
+          </ul>
+          <div class=''>
+            {% for item in socials %}
+              <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mx-4'>
+                <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </header>
     <main>

@@ -85,6 +85,20 @@ section {
 	visibility: hidden;
 }
 
+/* menu */
+.overlay-menu {
+  background-color: white;
+	opacity: 0;
+	visibility: hidden;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s;
+}
+
+.overlay-menu.active {
+	opacity: 1;
+	visibility: visible;
+	transition: visibility 0s linear 0s, opacity 0.25s 0s;
+}
+
 @screen sm {
 	.featured-slider {
 		padding-bottom: 60%;

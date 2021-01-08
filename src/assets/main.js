@@ -32,6 +32,23 @@ for (let i = 0; i < sortBtn.length; i++) {
 	});
 }
 
+window.addEventListener('click', function(e) {
+	if(e.target == document.querySelector('#nav-menu-wrapper')) {
+		toggleMenu();
+	}
+})
+window.addEventListener('resize', function() {
+	if(window.innerWidth > 640) {
+		var mainNav = document.getElementById('nav-menu');
+	mainNav.classList.remove('active');
+	}
+})
+
+function toggleMenu() {
+	var mainNav = document.getElementById('nav-menu');
+	mainNav.classList.toggle('active');
+}
+
 lightbox.option({
 	'resizeDuration': 200,
 	'wrapAround': true

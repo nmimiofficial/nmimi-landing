@@ -13,6 +13,13 @@ socials:
   - name: youtube
     icon: logo-youtube
     url: #
+services:
+  - name: Free Ship
+    icon: bicycle-outline
+  - name: Consultation
+    icon: call-outline
+  - name: Warranty
+    icon: cash-outline
 categories:
   ao: /assets/images/shirt.jpg
   vay: /assets/images/skirt.jpg
