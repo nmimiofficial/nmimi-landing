@@ -3,16 +3,6 @@ layout: home.liquid
 pageTitle: Nmimi
 title: Athleisure Never Looked Better.
 description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie with a cropped silhouette and raw-edge details paired with matching sweatpants.
-socials:
-  - name: facebook
-    icon: logo-facebook
-    url: #
-  - name: instagram
-    icon: logo-instagram
-    url: #
-  - name: youtube
-    icon: logo-youtube
-    url: #
 services:
   - name: Free Ship
     icon: bicycle-outline

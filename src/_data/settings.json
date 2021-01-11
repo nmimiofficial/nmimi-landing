@@ -1,0 +1,36 @@
+{
+  "menu": [
+    {
+      "name": "Collections",
+      "url": "#collections"
+    },
+    {
+      "name": "Gallery",
+      "url": "#gallery"
+    },
+    {
+      "name": "Services",
+      "url": "#services"
+    }
+  ],
+  "socials": [
+    {
+      "name":"facebook",
+      "url": "",
+      "icon": "logo-facebook"
+    },
+    {
+      "name":"instagram",
+      "url": "",
+      "icon": "logo-instagram"
+    },
+    {
+      "name":"youtube",
+      "url": "",
+      "icon": "logo-youtube"
+    }
+  ],
+  "meta": {
+    "linkUrl": "http://localhost:3000/"
+  }
+}

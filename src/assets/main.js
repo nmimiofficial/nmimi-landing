@@ -10,39 +10,19 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 });
 
-let sortBtn = document.querySelector('#filter-menu').children;
-let sortItem = document.querySelector('#product-list').children;
+AOS.init();
 
-for (let i = 0; i < sortBtn.length; i++) {
-	sortBtn[i].addEventListener('click', function () {
-		for (let j = 0; j < sortBtn.length; j++) {
-			sortBtn[j].classList.remove('active');
-		}
-
-		this.classList.add('active');
-
-		let targetData = this.getAttribute('data-filter');
-
-		for (let k = 0; k < sortItem.length; k++) {
-			sortItem[k].classList.remove('active');
-			if (sortItem[k].getAttribute('data-filter') == targetData) {
-				sortItem[k].classList.add('active');
-			}
-		}
-	});
-}
-
-window.addEventListener('click', function(e) {
-	if(e.target == document.querySelector('#nav-menu-wrapper')) {
+window.addEventListener('click', function (e) {
+	if (e.target == document.querySelector('#nav-menu-wrapper')) {
 		toggleMenu();
 	}
-})
-window.addEventListener('resize', function() {
-	if(window.innerWidth > 640) {
+});
+window.addEventListener('resize', function () {
+	if (window.innerWidth > 640) {
 		var mainNav = document.getElementById('nav-menu');
-	mainNav.classList.remove('active');
+		mainNav.classList.remove('active');
 	}
-})
+});
 
 function toggleMenu() {
 	var mainNav = document.getElementById('nav-menu');
@@ -50,6 +30,42 @@ function toggleMenu() {
 }
 
 lightbox.option({
-	'resizeDuration': 200,
-	'wrapAround': true
-})
+	resizeDuration: 200,
+	wrapAround: true,
+});
+
+function setActiveProducts(type) {
+	let sortItem = document.querySelector('#product-list');
+	if (sortItem) {
+		let sortItems = sortItem.children;
+		for (let k = 0; k < sortItems.length; k++) {
+			sortItems[k].classList.remove('deleted');
+			if (sortItems[k].getAttribute('data-filter') != type) {
+				sortItems[k].classList.add('deleted');
+			}
+		}
+	}
+}
+
+window.onload = function () {
+	let sortBtn = document.querySelector('#filter-menu');
+
+	setActiveProducts('new-arrival');
+
+	if (sortBtn) {
+		let sortBtns = sortBtn.children;
+
+		for (let i = 0; i < sortBtns.length; i++) {
+			sortBtns[i].addEventListener('click', function () {
+				for (let j = 0; j < sortBtns.length; j++) {
+					sortBtns[j].classList.remove('active');
+				}
+
+				this.classList.add('active');
+
+				let targetData = this.getAttribute('data-filter');
+				setActiveProducts(targetData);
+			});
+		}
+	}
+};

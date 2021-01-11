@@ -8,6 +8,7 @@
     <link href='/assets/styles.css' rel='stylesheet'>
     <link href='/assets/lightbox.min.css' rel='stylesheet'>
     <link href='https://fonts.gstatic.com' rel='preconnect'>
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Domine&family=Exo&display=swap' rel='stylesheet'>
     <title>{{ pageTitle }}</title>
   </head>
@@ -19,21 +20,14 @@
         </a>
       </div>
       <ul class='hidden sm:flex'>
-        <li class='px-4'>
-          <a class='hover:text-primary transition duration-300' href='#products'>Collections</a>
-        </li>
-        <li class='px-4'>
-          <a class='hover:text-primary transition duration-300' href='/gallery'>Gallery</a>
-        </li>
-        <li class='px-4'>
-          <a class='hover:text-primary transition duration-300' href='#services'>Services</a>
-        </li>
-        <li class='px-4'>
-          <a class='hover:text-primary transition duration-300' href='#services'>Contact</a>
-        </li>
+        {% for item in settings.menu %}
+          <li class='px-4'>
+            <a class='hover:text-primary transition duration-300 text-secondary' href='{{settings.meta.linkUrl | append: item.url}}'>{{item.name}}</a>
+          </li>
+        {% endfor %}
       </ul>
       <div class='hidden sm:block socials'>
-        {% for item in socials %}
+        {% for item in settings.socials %}
           <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mr-5'>
             <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
           </a>
@@ -49,21 +43,14 @@
             <ion-icon class='text-3xl' name='close-outline'></ion-icon>
           </button>
           <ul class='mb-6' id='nav-item'>
-            <li class='px-4 py-2'>
-              <a class='hover:text-primary transition duration-300' href='#products' onclick='toggleMenu()'>Collections</a>
-            </li>
-            <li class='px-4 py-2'>
-              <a class='hover:text-primary transition duration-300' href='/gallery'>Gallery</a>
-            </li>
-            <li class='px-4 py-2'>
-              <a class='hover:text-primary transition duration-300' href='#services'>Services</a>
-            </li>
-            <li class='px-4 py-2'>
-              <a class='hover:text-primary transition duration-300' href='#services'>Contact</a>
-            </li>
+            {% for item in settings.menu %}
+              <li class='px-4 py-2'>
+                <a class='hover:text-primary transition duration-300' href='{{item.url}}}' onclick='toggleMenu()'>{{item.name}}</a>
+              </li>
+            {% endfor %}
           </ul>
           <div class=''>
-            {% for item in socials %}
+            {% for item in settings.socials %}
               <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mx-4'>
                 <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
               </a>
@@ -81,12 +68,12 @@
         <div class='text-center mb-10'>
           <img alt='logo' class='h-8 inline-block' src='/assets/images/logo.png'/>
         </div>
-        <div class='flex flex-col mb-3 text-gray-500 italic font-light'>
+        <div class='flex flex-col mb-3 text-md text-gray-500 font-light'>
           <p>123 Ngo Gia Tu, Da Nang</p>
           <p>1231412515</p>
         </div>
         <div class='copyrights'>
-          <p class='para text-gray-500 font-light'>
+          <p class='para text-gray-500 font-light text-sm'>
             Copyright ©2020 All rights reserved | Made by
             <a class='text-primary hover:opacity-75' href='#'>
               Rooster World
@@ -100,6 +87,7 @@
     <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
     <script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
     <script src='/assets/lightbox-plus-jquery.min.js'></script>
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
     <script src='/assets/main.js'></script>
   </body>
 </html>
