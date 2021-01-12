@@ -22,12 +22,9 @@ module.exports = function (config) {
 
 	config.addPassthroughCopy('src/assets/images');
 	config.addPassthroughCopy('src/assets/js');
-	config.addPassthroughCopy({'node_modules/fullpage.js/vendors/scrolloverflow.min.js' : 'assets/js/scrolloverflow.min.js'});
-	config.addPassthroughCopy({'node_modules/fullpage.js/dist/fullpage.min.css' : 'assets/css/fullpage.min.css'});
-	config.addPassthroughCopy({'node_modules/fullpage.js/dist/fullpage.min.js': '/assets/js/fullpage.min.js'});
 	config.addPassthroughCopy('src/assets/lightbox-plus-jquery.min.js');
 	config.addPassthroughCopy('src/assets/lightbox.min.css');
-	config.addPassthroughCopy({'src/assets/lightbox' : 'images'});
+	config.addPassthroughCopy({ 'src/assets/lightbox': 'images' });
 	return {
 		passthroughFileCopy: true,
 		markdownTemplateEngine: 'njk',

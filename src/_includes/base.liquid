@@ -5,7 +5,6 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link href='https://unpkg.com/swiper/swiper-bundle.css' rel='stylesheet'>
     <link href='https://unpkg.com/swiper/swiper-bundle.min.css' rel='stylesheet'>
-    <link href='/assets/css/fullpage.min.css' rel='stylesheet' type='text/css'/>
     <link href='/assets/styles.css' rel='stylesheet'>
     <link href='/assets/lightbox.min.css' rel='stylesheet'>
     <link href='https://fonts.gstatic.com' rel='preconnect'>
@@ -86,11 +85,11 @@
         </div>
       </div>
     </header>
-    <main id='fullpage'>
+    <main class='w-full overflow-hidden'>
       {{ content | safe }}
     </main>
     <!-- Footer -->
-    <footer class='bg-yellow-100 relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
+    <footer class='bg-yellow-100 w-full relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
       <div class='container mx-auto max-w-screen-sm'>
         <div class='text-center mb-10'>
           <img alt='logo' class='h-8 inline-block' src='/assets/images/logo.png'/>
@@ -115,7 +114,6 @@
     <script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
     <script src='/assets/lightbox-plus-jquery.min.js'></script>
     <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
-    <script src='/assets/js/fullpage.min.js' type='text/javascript'></script>
     <script src='/assets/js/main.js'></script>
   </body>
 </html>

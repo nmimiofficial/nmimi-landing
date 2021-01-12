@@ -8,9 +8,9 @@ layout: base.liquid
       <span class='text-secondary'>Home</span>
     </a>
   </div>
-  <div class='gallery'>
+  <div class='gallery gap-4'>
     {% for item in data.gallery %}
-      <a data-lightbox='mygallery' href='{{item}}' class='inline-block rounded-2xl relative mb-4 overflow-hidden'>
+      <a data-lightbox='mygallery' href='{{item}}' class='inline-block relative mb-2 overflow-hidden'>
         <img alt='' class='w-full' data-aos='flip-left' src='{{item}}'>
       </a>
     {% endfor %}
