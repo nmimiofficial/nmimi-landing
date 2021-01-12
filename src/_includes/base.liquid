@@ -1,58 +1,80 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8'>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <link href='https://unpkg.com/swiper/swiper-bundle.css' rel='stylesheet'>
-    <link href='https://unpkg.com/swiper/swiper-bundle.min.css' rel='stylesheet'>
-    <link href='/assets/styles.css' rel='stylesheet'>
-    <link href='/assets/lightbox.min.css' rel='stylesheet'>
-    <link href='https://fonts.gstatic.com' rel='preconnect'>
-    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css2?family=Domine&family=Exo&display=swap' rel='stylesheet'>
-    <title>{{ pageTitle }}</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://unpkg.com/swiper/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/assets/styles.css" rel="stylesheet">
+    <link href="/assets/lightbox.min.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Exo&display=swap" rel="stylesheet">
+    <title>{{ settings.meta.title }}</title>
+    <meta name="title" content="{{ settings.meta.title }}">
+    <meta name="description" content="{{ settings.meta.description }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type">
+    <meta property="og:url" content="{{ settings.meta.siteUrl }}">
+    <meta property="og:site_name" content="{{ settings.meta.siteName }}">
+    <meta content="en_US" property="og:locale">
+    <meta property="og:title" content="{{ settings.meta.title }}">
+    <meta property="og:description" content="{{ settings.meta.description }}">
+    <meta property="og:image" content="{{ settings.meta.imgSrc }}">
+    <meta content="1280" property="og:image:width">
+    <meta content="640" property="og:image:height">
+    <meta property="og:image:alt" content="{{ settings.meta.imgAtl }}">
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card">
+    <meta property="twitter:url" content="{{ settings.meta.siteUrl }}">
+    <meta property="twitter:title" content="{{ settings.meta.title }}">
+    <meta property="twitter:description" content="{{ settings.meta.description }}">
+    <meta property="twitter:image" content="{{ settings.meta.imgSrc }}">
+    <meta property="twitter:image:alt" content="{{ settings.meta.imgAlt }}">
   </head>
   <body>
-    <header class='container flex justify-between py-6 items-baseline bg-white'>
+    <header class="container flex justify-between py-6 items-baseline bg-white">
       <div>
-        <a class='cursor-pointer' href='/'>
-          <img alt='logo' class='h-8' src='/assets/images/logo.png'/>
+        <a class="cursor-pointer" href="/">
+          <img alt="logo" class="h-8" src="/assets/images/logo.png"/>
         </a>
       </div>
-      <ul class='hidden sm:flex'>
+      <ul class="hidden sm:flex">
         {% for item in settings.menu %}
-          <li class='px-4'>
-            <a class='hover:text-primary transition duration-300 text-secondary' href='{{settings.meta.linkUrl | append: item.url}}'>{{item.name}}</a>
+          <li class="px-4">
+            <a class="hover:text-primary transition duration-300 text-secondary" href='{{settings.meta.linkUrl | append: item.url}}'>{{item.name}}</a>
           </li>
         {% endfor %}
       </ul>
-      <div class='hidden sm:block socials'>
+      <div class="hidden sm:block socials">
         {% for item in settings.socials %}
-          <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mr-5'>
-            <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
+          <a href="{{item.url}}" class="text-gray-600 hover:opacity-80 transition duration-500 mr-5">
+            <ion-icon name="{{item.icon}}" class="text-xl"></ion-icon>
           </a>
         {% endfor %}
       </div>
-      <button class='hover:opacity-60 sm:hidden text-secondary transition duration-300 outline-none focus:outline-none' onclick='toggleMenu()'>
-        <ion-icon class='text-2xl' name='menu-outline'></ion-icon>
+      <button class="hover:opacity-60 sm:hidden text-secondary transition duration-300 outline-none focus:outline-none" onclick="toggleMenu()">
+        <ion-icon class="text-2xl" name="menu-outline"></ion-icon>
       </button>
 
-      <div class='fixed overlay-menu inset-0' id='nav-menu' style='z-index: 9999;'>
-        <div class='absolute flex flex-col items-center justify-center inset-0' id='nav-menu-wrapper'>
-          <button aria-label='Close Menu' class='absolute right-0 top-0 p-1 transition duration-300 text-secondary opacity-75 hover:opacity-50 focus:outline-none' onclick='toggleMenu()' style='margin-right:24px;margin-top:24px'>
-            <ion-icon class='text-3xl' name='close-outline'></ion-icon>
+      <div class="fixed overlay-menu inset-0" id="nav-menu" style="z-index: 9999;">
+        <div class="absolute flex flex-col items-center justify-center inset-0" id="nav-menu-wrapper">
+          <button aria-label="Close Menu" class="absolute right-0 top-0 p-1 transition duration-300 text-secondary opacity-75 hover:opacity-50 focus:outline-none" onclick="toggleMenu()" style="margin-right:24px;margin-top:24px">
+            <ion-icon class="text-3xl" name="close-outline"></ion-icon>
           </button>
-          <ul class='mb-6' id='nav-item'>
+          <ul class="mb-6" id="nav-item">
             {% for item in settings.menu %}
-              <li class='px-4 py-2'>
-                <a class='hover:text-primary transition duration-300' href='{{item.url}}}' onclick='toggleMenu()'>{{item.name}}</a>
+              <li class="px-4 py-2">
+                <a class="hover:text-primary transition duration-300" href='{{item.url}}}' onclick="toggleMenu()">{{item.name}}</a>
               </li>
             {% endfor %}
           </ul>
-          <div class=''>
+          <div class="">
             {% for item in settings.socials %}
-              <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mx-4'>
-                <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
+              <a href="{{item.url}}" class="text-gray-600 hover:opacity-80 transition duration-500 mx-4">
+                <ion-icon name="{{item.icon}}" class="text-xl"></ion-icon>
               </a>
             {% endfor %}
           </div>
@@ -63,31 +85,31 @@
       {{ content | safe }}
     </main>
     <!-- Footer -->
-    <footer class='bg-yellow-100 relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
-      <div class='container mx-auto max-w-screen-sm'>
-        <div class='text-center mb-10'>
-          <img alt='logo' class='h-8 inline-block' src='/assets/images/logo.png'/>
+    <footer class="bg-yellow-100 relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden" id="contact">
+      <div class="container mx-auto max-w-screen-sm">
+        <div class="text-center mb-10">
+          <img alt="logo" class="h-8 inline-block" src="/assets/images/logo.png"/>
         </div>
-        <div class='flex flex-col mb-3 text-md text-gray-500 font-light'>
+        <div class="flex flex-col mb-3 text-md text-gray-500 font-light">
           <p>123 Ngo Gia Tu, Da Nang</p>
           <p>1231412515</p>
         </div>
-        <div class='copyrights'>
-          <p class='para text-gray-500 font-light text-sm'>
+        <div class="copyrights">
+          <p class="para text-gray-500 font-light text-sm">
             Copyright ©2020 All rights reserved | Made by
-            <a class='text-primary hover:opacity-75' href='#'>
+            <a class="text-primary hover:opacity-75" href="#">
               Rooster World
             </a>
           </p>
         </div>
       </div>
     </footer>
-    <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
-    <script src='https://unpkg.com/swiper/swiper-bundle.js'></script>
-    <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
-    <script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
-    <script src='/assets/lightbox-plus-jquery.min.js'></script>
-    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
-    <script src='/assets/main.js'></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="/assets/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/main.js"></script>
   </body>
 </html>

@@ -15,22 +15,27 @@
   ],
   "socials": [
     {
-      "name":"facebook",
+      "name": "facebook",
       "url": "",
       "icon": "logo-facebook"
     },
     {
-      "name":"instagram",
+      "name": "instagram",
       "url": "",
       "icon": "logo-instagram"
     },
     {
-      "name":"youtube",
+      "name": "youtube",
       "url": "",
       "icon": "logo-youtube"
     }
   ],
   "meta": {
-    "linkUrl": "http://localhost:3000/"
+    "title": "Nmimi Offical",
+    "description": "Nmimi Offical",
+    "siteUrl": "",
+    "siteName": "Nmimi Offical",
+    "imgSrc": "https://res.cloudinary.com/dduublnsr/image/upload/v1606802454/rooster/120130618_276756523630343_8600772113413042475_o_rskmzq.jpg",
+    "imgAtl": "Nmimi Offical"
   }
 }
