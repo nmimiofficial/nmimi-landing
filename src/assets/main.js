@@ -39,9 +39,9 @@ function setActiveProducts(type) {
 	if (sortItem) {
 		let sortItems = sortItem.children;
 		for (let k = 0; k < sortItems.length; k++) {
-			sortItems[k].classList.remove('deleted');
+			sortItems[k].classList.remove('hidden');
 			if (sortItems[k].getAttribute('data-filter') != type) {
-				sortItems[k].classList.add('deleted');
+				sortItems[k].classList.add('hidden');
 			}
 		}
 	}
@@ -49,8 +49,6 @@ function setActiveProducts(type) {
 
 window.onload = function () {
 	let sortBtn = document.querySelector('#filter-menu');
-
-	setActiveProducts('new-arrival');
 
 	if (sortBtn) {
 		let sortBtns = sortBtn.children;
