@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "fullpage.js": "^3.0.9",
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2"
   },

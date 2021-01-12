@@ -29,12 +29,12 @@ function server(done) {
 // build js
 function jsBuild() {
   return gulp
-    .src("./src/assets/main.js", {
+    .src("./src/assets/js/main.js", {
       sourcemaps: process.env.NODE_ENV !== "production",
     })
     .pipe(uglify())
     .pipe(
-      gulp.dest("./_site/assets/", {
+      gulp.dest("./_site/assets/js", {
         sourcemaps: process.env.NODE_ENV !== "production",
       })
     );

@@ -7,16 +7,30 @@
 
 html,
 body {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
+}
+.section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container {
   max-width: 1280px;
-}
-section {
-  @apply py-6 sm:py-10 md:py-16;
 }
 
 .socials > a:last-child {
@@ -36,7 +50,6 @@ section {
 
 .gallery {
   column-count: 2;
-  column-gap: 1rem;
 }
 
 .gallery > a {
@@ -95,13 +108,11 @@ section {
 @screen sm {
   .gallery {
     column-count: 3;
-    column-gap: 1rem;
   }
 }
 @screen md {
   .gallery {
     column-count: 4;
-    column-gap: 1.5rem;
   }
 }
 
