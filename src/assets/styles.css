@@ -17,7 +17,7 @@ body {
 }
 
 .section {
-	@apply py-16 sm:py-24;
+	@apply py-8 sm:py-16;
 }
 
 .socials > a:last-child {
