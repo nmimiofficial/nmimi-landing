@@ -1,7 +1,7 @@
 ---
 layout: base.liquid
 ---
-<div class='container sm:flex sm:flex-row pt-6 pb-16'>
+<div class='container sm:flex sm:flex-row pt-16 pb-10 sm:pt-20 sm:pb-16'>
   <div class='flex flex-col justify-center sm:pr-4 md:pr-10 items-start mb-20 md:mb-0 sm:w-1/2'>
     <h1 class='text-5xl font-semibold leading-tight' data-aos-duration='800' data-aos='fade-right'>
       {{ title }}
@@ -22,7 +22,7 @@ layout: base.liquid
               <div class='swiper-slide' style='background-image: url("{{slide}}"); background-position: center; background-size: cover; background-repeat: no-repeat;'></div>
             {% endfor %}
           </div>
-          <div class='swiper-pagination'></div>
+          <div class='swiper-pagination swiper-pagination-white'></div>
         </div>
       </div>
     </div>
@@ -87,32 +87,37 @@ layout: base.liquid
 
 <section class='container' id='collections'>
   <div class='text-right mb-10' id='filter-menu'>
-    <span class='active mr-4' data-filter='new-arrival'>New Arrival</span>
-    <span class='' data-filter='best-seller'>Best Seller</span>
+    {% for item in data.collections %}
+      <span class='px-1 {% if forloop.first == true %} active {% endif %}' onclick='setActiveCollections(this, "{{item.name}}")'>{{item.label}}</span>
+    {% endfor %}
   </div>
-  <div class='flex flex-wrap' id='product-list'>
-    {% for item in products %}
-      <div class='product-item w-full cursor-default sm:w-1/2 md:w-1/3 {% if item.type == "best-seller" %}
-                        hidden
-                      {% endif %}' data-filter="{{item.type}}">
-        <div class='w-full p-4' data-aos='zoom-in-up'>
-          <div class='product-item-wrapper relative w-full rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition' style='padding-bottom: 120%;'>
-            <img alt='' class='absolute w-full h-full object-cover object-center' src="{{item.images[0]}}">
-            <a href="{{item.images[0]}}" data-lightbox="{{item.id}}" class='zoom-btn z-20 absolute top-4 right-4 h-8 w-8 flex justify-center items-center cursor-pointer leading-4 rounded-full bg-black bg-opacity-60 hover:opacity-60'>
-              <ion-icon class='text-xl text-white' name='expand-outline'></ion-icon>
-            </a>
-            <div class='description absolute z-10 bg-black bg-opacity-60 text-white bottom-0 right-0 left-0 px-4 py-2 opacity-0 transition duration-500'>
-              <p class='text-md font-semibold'>{{item.name}}</p>
-              <p class='text-md font-light'>{{item.id}}</p>
+  <div id='collections-wrapper'>
+    {% for item in data.collections %}
+      <div class='flex flex-wrap {% if forloop.first != true %} hidden {% endif %}' id='{{item.name}}'>
+        {% for product in item.items %}
+          <div class='product-item w-full cursor-default sm:w-1/2 md:w-1/3 {% if item.type == "best-seller" %} hidden {% endif %}'>
+            <div class='w-full p-4' data-aos='zoom-in-up'>
+              <div class='product-item-wrapper relative w-full rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl duration-500 transition' style='padding-bottom: 120%;'>
+                <img alt='' class='absolute w-full h-full object-cover object-center' src="{{product.images[0]}}">
+                <a href="{{product.images[0]}}" data-lightbox="{{product.id}}" class='zoom-btn z-20 absolute top-4 right-4 h-8 w-8 flex justify-center items-center cursor-pointer leading-4 rounded-full bg-black bg-opacity-60 hover:opacity-60'>
+                  <ion-icon class='text-xl text-white' name='expand-outline'></ion-icon>
+                </a>
+                <div class='description absolute z-10 bg-black bg-opacity-60 text-white bottom-0 right-0 left-0 px-4 py-2 opacity-0 transition duration-500'>
+                  <p class='text-md font-semibold'>{{product.name}}</p>
+                  <p class='text-md font-light'>{{product.id}}</p>
+                </div>
+              </div>
             </div>
+            {% for img in product.images offset:1 %}
+              <a href="{{img}}" class='hidden' data-lightbox="{{product.id}}"></a>
+            {% endfor %}
           </div>
-        </div>
-        {% for img in item.images offset:1 %}
-          <a href="{{img}}" class='hidden' data-lightbox="{{item.id}}"></a>
         {% endfor %}
       </div>
     {% endfor %}
   </div>
+
+
 </section>
 
 <section class='container' id='services'>
@@ -131,9 +136,12 @@ layout: base.liquid
 <section class='container' id='gallery'>
   <h2 class='text-4xl text-primary mb-16' data-aos='fade-right'>Gallery</h2>
   <div class='gallery mb-10'>
-    <a data-lightbox='mygallery' href='/assets/images/slide1.jpg'>
-      <img alt='' class='rounded-2xl' data-aos='flip-left' src='/assets/images/slide1.jpg'>
-    </a>
+    {% for item in data.gallery %}
+      <a data-lightbox='mygallery' href='{{item}}' class='inline-block rounded-2xl relative mb-4 overflow-hidden'>
+        <img alt='' class='w-full' data-aos='flip-left' src='{{item}}'>
+      </a>
+    {% endfor %}
+
   </div>
   <div class='flex justify-center'>
     <a class='flex items-center hover:opacity-60 transition duration-400' href='/gallery'>
