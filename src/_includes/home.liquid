@@ -5,15 +5,18 @@ layout: base.liquid
   <div class='w-full h-full absolute z-10 bg-opacity-30 bg-black'>
     <div class='container w-full h-full  flex flex-col justify-center items-start '>
       <div class='md:w-1/2'>
-        <h1 class='text-5xl text-white font-semibold leading-tight' data-aos-duration='800' data-aos='fade-right'>
+        <h1 class='text-3xl sm:text-5xl text-white font-semibold leading-tight mb-3' data-aos-duration='800' data-aos='fade-right'>
           {{ title }}
         </h1>
-        <p class='text-lg text-white mb-10' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-right'>
+        <p class='text-md sm:text-lg text-white mb-10' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-right'>
           {{ description }}
         </p>
-        <a class='bg-primary text-white font-medium py-3 px-10 hover:shadow-md duration-500 transition' data-aos-delay='900' data-aos='fade-up' href='#collections'>
-          Shop Now
-        </a>
+        <span data-aos-delay='900' data-aos='fade-up'>
+          <a class='duration-300 transition border-primary border-2 text-white font-medium py-3 px-10 hover:bg-primary' href='#collections'>
+            Shop Now
+          </a>
+        </span>
+
       </div>
     </div>
 
@@ -44,13 +47,17 @@ layout: base.liquid
 
 <!-- event -->
 {% if event.open == true %}
-  <section class='section pb-1/3 relative' data-aos-duration='1200' data-aos='flip-left'>
+  <section class='section pb-2/3 sm:pb-1/2 md:pb-1/3 relative ' data-aos-duration='1200' data-aos='flip-left'>
     <div class='absolute w-full h-full top-0' style='background-image: url({{event.image}}); background-position: center; background-repeat: no-repeat; background-size: cover;'></div>
-    <div class='absolute w-full h-full top-0 bg-black bg-opacity-20 flex items-center justify-center flex-col'>
-      <h3 class='text-6xl text-white mb-4 font-bold' data-aos-delay='200' data-aos='fade-down'>SALE</h3>
-      <a class='bg-primary text-white font-medium py-3 px-10 hover:shadow-md duration-500 transition' data-aos-delay='200' data-aos='fade-up' href='#collections'>
-        Shop Now
-      </a>
+    <div class='absolute w-full h-full top-0 bg-black bg-opacity-30 flex items-center justify-center flex-col px-8 sm:px-20 md:px-1/4 '>
+      <h3 class='text-4xl lg:text-6xl text-white mb-4 font-bold' data-aos-delay='200' data-aos='fade-down'>SALE</h3>
+      <p class='text-sm sm:text-md text-white mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facilis! Dolores quidem nostrum reprehenderit vero cum quam? Est dignissimos architecto maiores, quia odit tempore, fugiat labore ducimus molestias quibusdam aliquam.</p>
+      <p class='text-md sm:text-xl text-white lg:text-2xl mb-6'>01/01/2021 - 01/01/2022</p>
+      <span data-aos-delay='300' data-aos='fade-up'>
+        <a class='duration-300 transition bg-primary border-primary hover:bg-secondary text-white font-medium py-3 px-10' href='#collections'>
+          Shop Now
+        </a>
+      </span>
     </div>
   </section>
 {% endif %}
@@ -105,26 +112,14 @@ layout: base.liquid
 
 </section>
 
-<!-- <section class='section container' id='services'>
-  <h2 class='text-4xl text-primary text-center mb-12' data-aos='fade-top'>Services</h2>
-  <div class='flex flex-wrap justify-center'>
-    {% for item in services %}
-      <div data-aos='fade-right' data-aos-delay='{{forloop.index | times: 200}}' class='flex flex-col items-center justify-center w-full mb-4 sm:w-36 sm:h-36 md:w-48 md:h-48 md:mx-4 sm:mx-2 p-4 bg-yellow-50'>
-        <ion-icon class='text-3xl sm:text-4xl md:text-5xl mb-3 text-primary' name='{{item.icon}}'></ion-icon>
-        <span class='text-secondary text-md opacity-60'>{{item.name}}</span>
-      </div>
-    {% endfor %}
-  </div>
-</section> -->
-<section class='container section mb-40'>
-  <div class='w-1/2 pb-1/2 relative m-auto'>
-    <img alt='' class='absolute w-full h-full top-0 left-0 object-center object-cover' src='/assets/images/slide1.jpg'>
-    <div class='absolute w-12 h-full top-0 -left-14 bg-yellow-100'></div>
-    <h3 class='uppercase text-6xl font-bold absolute top-0 -left-24 text-primary opacity-60' style='writing-mode: vertical-lr;'>About us</h3>
-    <div class='w-full h-full top-1/3 left-1/2 bg-white absolute p-6 shadow-lg flex flex-col justify-center'>
-      <h4 class='text-4xl text-secondary mb-6'>Who we are?</h4>
-      <p class='text-xl text-secondary opacity-80 leading-10'>
+<section class='min-h-screen w-full relative' id='about'>
+  <img alt='' class='absolute w-full h-full top-0 left-0 object-center object-cover' src='/assets/images/slide4.jpg'>
+  <div class='absolute w-full h-full p-8 sm:p-10 bg-black bg-opacity-30'>
+    <div class='w-full md:w-2/3 lg:w-1/2 h-full flex flex-col justify-center items-center m-auto'>
+      <h4 class='text-3xl md:text-4xl mb-6 text-white'>Who we are?</h4>
+      <p class='text-md text-white opacity-80 leading-10 relative italic'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat dicta atque officia blanditiis asperiores non, rem et temporibus, eum facere esse cupiditate id, corrupti nesciunt? Tempore magni neque architecto sunt.
+        <ion-icon class='text-4xl md:text-6xl text-primary absolute top-0 left-0 transform -translate-x-1/2' src='/assets/images/quote.svg' style='z-index: -1;'></ion-icon>
       </p>
     </div>
   </div>

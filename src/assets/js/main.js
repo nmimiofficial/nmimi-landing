@@ -49,3 +49,18 @@ function setActiveCollections(e, id) {
 		}
 	}
 }
+
+window.onload = function () {
+	var header = document.querySelector('header');
+	var pathname = window.location.pathname;
+	if (pathname == '/') {
+		if (window.scrollY > 100) {
+			header.classList.add('scrolled');
+		}
+		window.addEventListener('scroll', function () {
+			header.classList.toggle('scrolled', window.scrollY > 100);
+		});
+	} else {
+		header.classList.add('scrolled');
+	}
+};

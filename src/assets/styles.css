@@ -109,4 +109,8 @@ body {
 	}
 }
 
+header.scrolled {
+	@apply bg-black bg-opacity-70;
+}
+
 @tailwind utilities;

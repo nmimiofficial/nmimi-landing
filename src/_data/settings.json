@@ -1,16 +1,20 @@
 {
   "menu": [
     {
+      "name": "Home",
+      "url": "#"
+    },
+    {
       "name": "Collections",
       "url": "#collections"
     },
     {
-      "name": "Gallery",
-      "url": "#gallery"
+      "name": "About",
+      "url": "#about"
     },
     {
-      "name": "Services",
-      "url": "#services"
+      "name": "Gallery",
+      "url": "#gallery"
     }
   ],
   "socials": [
