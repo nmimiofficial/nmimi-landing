@@ -1,10 +1,18 @@
 ---
 layout: base.liquid
 ---
-<div class='container gallery mb-20 mt-20 gap-4'>
-  {% for item in images %}
-    <a data-lightbox='mygallery' href='{{item}}' class='block relative mb-4'>
-      <img alt='' class='rounded-2xl' src='{{item}}'>
+<section class='container pt-32 pb-20'>
+  <div class='flex mb-10'>
+    <a class='flex items-center hover:opacity-60 transition duration-400' href='/'>
+      <ion-icon class='text-primary text-4xl cursor-pointer mr-2' name='arrow-back-outline'></ion-icon>
+      <span class='text-secondary'>Home</span>
     </a>
-  {% endfor %}
-</div>
+  </div>
+  <div class='gallery gap-4'>
+    {% for item in data.gallery %}
+      <a data-lightbox='mygallery' href='{{item}}' class='inline-block relative mb-2 overflow-hidden'>
+        <img alt='' class='w-full' data-aos='flip-left' src='{{item}}'>
+      </a>
+    {% endfor %}
+  </div>
+</section>

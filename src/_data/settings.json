@@ -1,16 +1,20 @@
 {
   "menu": [
     {
+      "name": "Home",
+      "url": "#"
+    },
+    {
       "name": "Collections",
       "url": "#collections"
     },
     {
-      "name": "Gallery",
-      "url": "#gallery"
+      "name": "About",
+      "url": "#about"
     },
     {
-      "name": "Services",
-      "url": "#services"
+      "name": "Gallery",
+      "url": "#gallery"
     }
   ],
   "socials": [
@@ -33,7 +37,7 @@
   "meta": {
     "title": "Nmimi Offical",
     "description": "Nmimi Offical",
-    "siteUrl": "",
+    "siteUrl": "http://localhost:3000/",
     "siteName": "Nmimi Offical",
     "imgSrc": "https://res.cloudinary.com/dduublnsr/image/upload/v1606802454/rooster/120130618_276756523630343_8600772113413042475_o_rskmzq.jpg",
     "imgAtl": "Nmimi Offical"
