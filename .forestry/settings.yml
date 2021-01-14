@@ -7,11 +7,9 @@ sections:
 - type: document
   path: src/_data/data.json
   label: Data
-  match: "**/*"
 - type: document
   path: src/index.md
   label: Home
-  match: "**/*"
 - type: document
   path: src/_data/settings.json
   label: Settings
