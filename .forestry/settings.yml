@@ -16,7 +16,7 @@ sections:
 upload_dir: landing
 public_path: "/landing"
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
