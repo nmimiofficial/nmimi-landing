@@ -32,9 +32,9 @@ fields:
     name: image
     label: image
 - name: videoUrl
-  type: file
+  type: text
   config:
-    maxSize: 64
+    required: false
   label: Video
 pages:
 - src/index.md
