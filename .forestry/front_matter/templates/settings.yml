@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: field_group_list
   name: menu
-  label: menu
+  label: Menu
   fields:
   - type: text
     name: name
@@ -14,7 +14,7 @@ fields:
     label: url
 - type: field_group_list
   name: socials
-  label: socials
+  label: Socials
   fields:
   - type: text
     name: name
@@ -27,7 +27,7 @@ fields:
     label: icon
 - type: field_group
   name: meta
-  label: meta
+  label: Meta data
   fields:
   - type: text
     name: title
