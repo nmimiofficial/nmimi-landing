@@ -1,0 +1,51 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: field_group_list
+  name: menu
+  label: Menu
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: url
+    label: url
+- type: field_group_list
+  name: socials
+  label: Socials
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: icon
+    label: icon
+- type: field_group
+  name: meta
+  label: Meta data
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: siteUrl
+    label: siteUrl
+  - type: text
+    name: siteName
+    label: siteName
+  - type: file
+    name: imgSrc
+    label: imgSrc
+  - type: text
+    name: imgAtl
+    label: imgAtl
+pages:
+- src/_data/settings.json
