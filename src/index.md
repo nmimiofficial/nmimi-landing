@@ -10,6 +10,6 @@ categories:
   giay: "/v1610590390/landing/shoes_dh2q8u.jpg"
 event:
   open: true
-  image: ''
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/sale_n6z1o3.png
 
 ---
