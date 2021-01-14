@@ -5,7 +5,6 @@ fields:
 - type: text
   name: layout
   label: layout
-  hidden: true
 - type: text
   name: title
   label: title
@@ -30,10 +29,10 @@ fields:
     label: giay
 - type: file
   name: collectionImage
-  label: Collection Image
+  label: collectionImage
 - type: field_group
   name: about
-  label: About
+  label: about
   fields:
   - type: file
     name: image
@@ -43,11 +42,20 @@ fields:
     label: description
 - type: field_group
   name: event
-  label: Event
+  label: event
   fields:
   - type: boolean
     name: open
     label: open
+  - type: text
+    name: description
+    label: description
+  - type: datetime
+    name: time
+    label: time
+  - type: text
+    name: title
+    label: title
   - type: file
     name: image
     label: image
