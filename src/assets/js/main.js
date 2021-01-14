@@ -1,15 +1,3 @@
-var mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
-  spaceBetween: 50,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
 AOS.init();
 
 window.addEventListener('click', function (e) {
@@ -66,5 +54,5 @@ window.onload = function () {
 
   setTimeout(function () {
     document.querySelector('#loading').classList.add('fade-out');
-  }, 2000);
+  }, 1200);
 };
