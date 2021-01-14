@@ -15,7 +15,7 @@ sections:
   label: Settings
 upload_dir: landing
 public_path: "/landing"
-front_matter_path: ''
+front_matter_path: https://res.cloudinary.com/dab00oody/image/upload
 use_front_matter_path: true
 file_template: ":filename:"
 build:
