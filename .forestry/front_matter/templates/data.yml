@@ -28,3 +28,5 @@ fields:
 - type: image_gallery
   name: gallery
   label: gallery
+pages:
+- src/_data/data.json
