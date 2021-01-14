@@ -10,6 +10,6 @@ categories:
   giay: "/assets/images/shoes.jpg"
 event:
   open: true
-  image: "/assets/images/sale.png"
+  image: "/v1610590392/landing/sale_n6z1o3.png"
 
 ---
