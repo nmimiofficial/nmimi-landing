@@ -3,9 +3,6 @@ label: home
 hide_body: true
 fields:
 - type: text
-  name: pageTitle
-  label: pageTitle
-- type: text
   name: title
   label: title
 - type: textarea
@@ -34,24 +31,5 @@ fields:
   - type: file
     name: image
     label: image
-- type: image_gallery
-  name: slides
-  label: slides
-- type: field_group_list
-  name: products
-  label: products
-  fields:
-  - type: text
-    name: name
-    label: name
-  - type: text
-    name: id
-    label: id
-  - type: image_gallery
-    name: images
-    label: images
-  - type: text
-    name: type
-    label: type
 pages:
 - src/index.md
