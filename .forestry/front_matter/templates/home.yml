@@ -30,10 +30,10 @@ fields:
     label: giay
 - type: file
   name: collectionImage
-  label: collectionImage
+  label: Collection Image
 - type: field_group
   name: about
-  label: about
+  label: About
   fields:
   - type: file
     name: image
@@ -43,7 +43,7 @@ fields:
     label: description
 - type: field_group
   name: event
-  label: event
+  label: Event
   fields:
   - type: boolean
     name: open
