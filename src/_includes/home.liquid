@@ -130,9 +130,13 @@ layout: base.liquid
   <h2 class='text-4xl text-primary mb-16' data-aos='fade-right'>Gallery</h2>
   <div class='gallery mb-10 gap-4'>
     {% for item in data.gallery %}
-      <a data-lightbox='mygallery' href='{{item}}' class='w-full mb-2 inline-block relative overflow-hidden'>
-        <img alt='' class='w-full' data-aos='flip-left' src='{{item}}'>
-      </a>
+      {% if forloop.index > 5 %}
+        {% break %}
+      {% else %}
+        <a data-lightbox='mygallery' href='{{item}}' class='w-full mb-2 inline-block relative overflow-hidden'>
+          <img alt='' class='w-full' data-aos='flip-left' src='{{item}}'>
+        </a>
+      {% endif %}
     {% endfor %}
 
   </div>
