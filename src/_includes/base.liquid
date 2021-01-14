@@ -41,18 +41,18 @@
       <div class='container z-10 left-0 right-0 top-0 flex justify-between py-6 items-baseline'>
         <div>
           <a class='cursor-pointer' href='/'>
-            <img alt='logo' class='h-8' src='/assets/images/logowhite.png'/>
+            <img alt='logo' class='h-8' src='{{settings.header.logoWhiteUrl}}'/>
           </a>
         </div>
         <ul class='hidden sm:flex' id='menu'>
-          {% for item in settings.menu %}
+          {% for item in settings.header.menu %}
             <li class='px-4'>
               <a class='hover:text-primary transition duration-300 text-white' href='{{settings.meta.siteUrl | append: item.url}}'>{{item.name}}</a>
             </li>
           {% endfor %}
         </ul>
         <div class='hidden sm:block socials'>
-          {% for item in settings.socials %}
+          {% for item in settings.header.socials %}
             <a href="{{item.url}}" class='text-white hover:text-primary transition duration-500 mr-5'>
               <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
             </a>
@@ -69,14 +69,14 @@
             <ion-icon class='text-3xl' name='close-outline'></ion-icon>
           </button>
           <ul class='mb-6' id='nav-item'>
-            {% for item in settings.menu %}
+            {% for item in settings.header.menu %}
               <li class='px-4 py-2'>
                 <a class='hover:text-primary transition duration-300' href='{{settings.meta.siteUrl | append: item.url}}' onclick='toggleMenu()'>{{item.name}}</a>
               </li>
             {% endfor %}
           </ul>
           <div class=''>
-            {% for item in settings.socials %}
+            {% for item in settings.header.socials %}
               <a href="{{item.url}}" class='text-gray-600 hover:opacity-80 transition duration-500 mx-4'>
                 <ion-icon name="{{item.icon}}" class='text-xl'></ion-icon>
               </a>
@@ -92,16 +92,16 @@
     <footer class='bg-yellow-100 w-full relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
       <div class='container mx-auto max-w-screen-sm'>
         <div class='text-center mb-10'>
-          <img alt='logo' class='h-6 sm:h-8 inline-block' src='/assets/images/logo.png'/>
+          <img alt='logo' class='h-6 sm:h-8 inline-block' src='{{settings.footer.logoUrl}}'/>
         </div>
         <div class='flex flex-col mb-3 text-md text-gray-500 font-light'>
-          <p>123 Ngo Gia Tu, Da Nang</p>
-          <p>1231412515</p>
+          <p>{{settings.footer.address}}</p>
+          <p>{{settings.footer.phone}}</p>
         </div>
         <div class='copyrights'>
           <p class='para text-gray-500 font-light text-sm'>
             Copyright ©2020 All rights reserved | Made by
-            <a class='text-primary hover:opacity-75' href='#'>
+            <a class='text-primary hover:opacity-75' href='https://rooster-world.com/'>
               Rooster World
             </a>
           </p>
@@ -111,7 +111,6 @@
     <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
     <script src='https://unpkg.com/swiper/swiper-bundle.js'></script>
     <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
-    <script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
     <script src='/assets/lightbox-plus-jquery.min.js'></script>
     <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
     <script src='/assets/js/main.js'></script>

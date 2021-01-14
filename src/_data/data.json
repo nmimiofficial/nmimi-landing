@@ -8,9 +8,9 @@
           "name": "Ao dam",
           "id": "12124124",
           "images": [
-            "/v1610590392/landing/slide3_ubmqaa.jpg",
-            "/v1610590392/landing/slide2_kelzte.jpg",
-            "/v1610590391/landing/shirt_o0xgau.jpg"
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide3_ubmqaa.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg"
           ]
         }
       ]
@@ -23,19 +23,19 @@
           "name": "Ao chi do",
           "id": "23214",
           "images": [
-            "/v1610590392/landing/slide2_kelzte.jpg"
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg"
           ]
         }
       ]
     }
   ],
   "gallery": [
-    "/v1610590391/landing/shirt_o0xgau.jpg",
-    "/v1610590393/landing/slide5_zeaieq.jpg",
-    "/v1610590392/landing/slide4_hy6ghl.jpg",
-    "/v1610590392/landing/slide3_ubmqaa.jpg",
-    "/v1610590392/landing/slide2_kelzte.jpg",
-    "/v1610590392/landing/slide1_ugrjg1.jpg",
-    "/v1610590391/landing/skirt_xbi4ru.jpg"
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg",
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590393/landing/slide5_zeaieq.jpg",
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide4_hy6ghl.jpg",
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide3_ubmqaa.jpg",
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg",
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide1_ugrjg1.jpg",
+    "https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/skirt_xbi4ru.jpg"
   ]
 }
