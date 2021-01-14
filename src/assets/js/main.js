@@ -63,4 +63,9 @@ window.onload = function () {
 	} else {
 		header.classList.add('scrolled');
 	}
+
+	setTimeout(() => {
+		document.querySelector('#loading').classList.add('fade-out');
+	}, 2000);
+
 };

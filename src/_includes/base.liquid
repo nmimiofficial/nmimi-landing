@@ -37,6 +37,9 @@
     <meta property='twitter:image:alt' content="{{ settings.meta.imgAlt }}">
   </head>
   <body>
+    <div class='fixed inset-0 bg-white flex items-center justify-center' id='loading' style='z-index: 999999;'>
+      <img src="{{settings.footer.logoUrl}}" class='h-10 logo-animation' alt='log0'>
+    </div>
     <header class='fixed w-full z-50 transition duration-500'>
       <!-- menu -->
       <div class='container z-10 left-0 right-0 top-0 flex justify-between py-6 items-baseline'>

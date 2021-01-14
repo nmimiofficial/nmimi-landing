@@ -12,6 +12,35 @@ body {
   scroll-behavior: smooth;
 }
 
+.logo-animation {
+  animation: logoanimation 1s ease-in-out 0s alternate infinite;
+}
+
+@keyframes logoanimation {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* loading */
+#loading.fade-out {
+  animation: fadeOut 1s both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .container {
   max-width: 1024px;
 }
