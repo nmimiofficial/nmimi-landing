@@ -15,5 +15,8 @@ about:
   description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie with a cropped silhouette and raw-edge details paired with matching sweatpants.
 event:
   open: true
+  description: Oh yeah
+  time: 1/1/2020 - 1/1/2021
+  title: Big sale
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/sale_n6z1o3.png
 ---
