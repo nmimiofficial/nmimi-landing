@@ -5,53 +5,12 @@
       "label": "New Arrival",
       "items": [
         {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
+          "name": "Ao dam",
+          "id": "12124124",
           "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
+            "/v1610590392/landing/slide3_ubmqaa.jpg",
+            "/v1610590392/landing/slide2_kelzte.jpg",
+            "/v1610590391/landing/shirt_o0xgau.jpg"
           ]
         }
       ]
