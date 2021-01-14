@@ -26,7 +26,7 @@ fields:
       name: images
       label: images
   config:
-    labelField: name
+    labelField: label
 - type: image_gallery
   name: gallery
   label: Gallery
