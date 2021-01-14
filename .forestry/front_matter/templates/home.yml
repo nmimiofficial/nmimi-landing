@@ -1,0 +1,61 @@
+---
+label: home
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: videoUrl
+  label: videoUrl
+- type: field_group
+  name: categories
+  label: categories
+  fields:
+  - type: file
+    name: ao
+    label: ao
+  - type: file
+    name: vay
+    label: vay
+  - type: file
+    name: giay
+    label: giay
+- type: file
+  name: collectionImage
+  label: collectionImage
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: textarea
+    name: description
+    label: description
+- type: field_group
+  name: event
+  label: event
+  fields:
+  - type: boolean
+    name: open
+    label: open
+  - type: text
+    name: description
+    label: description
+  - type: datetime
+    name: time
+    label: time
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: image
+    label: image
