@@ -7,7 +7,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -17,7 +17,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -27,7 +27,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -37,7 +37,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -47,7 +47,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -63,7 +63,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -73,7 +73,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -83,7 +83,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -93,7 +93,7 @@
         {
           "name": "Áo bà ba",
           "id": "123124sdffs",
-          "images" : [
+          "images": [
             "/assets/images/slide1.jpg",
             "/assets/images/slide2.jpg",
             "/assets/images/slide3.jpg",
@@ -103,7 +103,7 @@
       ]
     }
   ],
-  "gallery" : [
+  "gallery": [
     "/assets/images/slide1.jpg",
     "/assets/images/slide4.jpg",
     "/assets/images/slide2.jpg",
