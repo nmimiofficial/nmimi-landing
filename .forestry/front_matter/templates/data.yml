@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: field_group_list
   name: collections
-  label: collections
+  label: Collections
   fields:
   - type: text
     name: name
@@ -14,7 +14,7 @@ fields:
     label: label
   - type: field_group_list
     name: items
-    label: items
+    label: Products
     fields:
     - type: text
       name: name
@@ -27,4 +27,4 @@ fields:
       label: images
 - type: image_gallery
   name: gallery
-  label: gallery
+  label: Gallery
