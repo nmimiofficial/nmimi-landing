@@ -8,52 +8,9 @@
           "name": "Áo bà ba",
           "id": "123124sdffs",
           "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
           ]
         }
+        
       ]
     },
     {
@@ -64,55 +21,12 @@
           "name": "Áo bà ba",
           "id": "123124sdffs",
           "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
-          ]
-        },
-        {
-          "name": "Áo bà ba",
-          "id": "123124sdffs",
-          "images": [
-            "/assets/images/slide1.jpg",
-            "/assets/images/slide2.jpg",
-            "/assets/images/slide3.jpg",
-            "/assets/images/slide4.jpg"
           ]
         }
+       
       ]
     }
   ],
   "gallery": [
-    "/assets/images/slide1.jpg",
-    "/assets/images/slide4.jpg",
-    "/assets/images/slide2.jpg",
-    "/assets/images/slide1.jpg",
-    "/assets/images/slide1.jpg",
-    "/assets/images/slide2.jpg",
-    "/assets/images/slide1.jpg",
-    "/assets/images/slide4.jpg",
-    "/assets/images/slide1.jpg",
-    "/assets/images/slide4.jpg"
   ]
 }
