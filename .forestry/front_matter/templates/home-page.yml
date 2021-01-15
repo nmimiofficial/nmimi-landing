@@ -1,0 +1,74 @@
+---
+label: Home Page
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: field_group
+  name: banner
+  label: banner
+  fields:
+  - type: boolean
+    name: video
+    label: video
+  - type: text
+    name: videoUrl
+    label: videoUrl
+  - type: image_gallery
+    name: slides
+    label: slides
+- type: image_gallery
+  name: categories
+  label: categories
+- type: field_group
+  name: collectionCallout
+  label: collectionCallout
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+- type: field_group
+  name: event
+  label: event
+  fields:
+  - type: boolean
+    name: open
+    label: open
+  - type: text
+    name: description
+    label: description
+  - type: datetime
+    name: time
+    label: time
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: image
+    label: image
+  - type: textarea
+    name: description
+    label: description
