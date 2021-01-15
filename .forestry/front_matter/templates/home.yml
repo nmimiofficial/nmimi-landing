@@ -28,16 +28,16 @@ fields:
   - type: file
     name: giay
     label: giay
-- type: file
-  name: collectionImage
-  label: collectionImage
 - type: field_group
-  name: about
-  label: about
+  name: collectionCallout
+  label: collectionCallout
   fields:
   - type: file
     name: image
     label: image
+  - type: text
+    name: title
+    label: title
   - type: textarea
     name: description
     label: description
@@ -60,5 +60,16 @@ fields:
   - type: file
     name: image
     label: image
-pages:
-- src/index.md
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: image
+    label: image
+  - type: textarea
+    name: description
+    label: description
