@@ -11,10 +11,9 @@ banner:
   - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_sdgvjc.webp
   - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
 categories:
-- https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_sdgvjc.webp
-- https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590393/landing/slide5_zeaieq.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide3_ubmqaa.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg
 collectionCallout:
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
   title: Fashion Collection
