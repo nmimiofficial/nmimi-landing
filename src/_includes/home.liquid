@@ -20,7 +20,16 @@ layout: base.liquid
       </div>
     </div>
   </div>
-  <video autoplay class='absolute w-full h-full object-cover object-center' loop muted src='{{videoUrl}}'></video>
+  {% if banner.video == true %}
+    <video autoplay class='absolute w-full h-full object-cover object-center' loop muted src='{{banner.videoUrl}}'></video>
+  {% else %}
+    <div class='absolute w-full h-full'>
+      {% for item in banner.slides %}
+        <img src="{{item}}" alt='slide' class='banner-slide fading absolute w-full h-full object-center object-cover'>
+      {% endfor %}
+    </div>
+  {% endif %}
+
   <div class='absolute text-center bottom-10 w-full z-20'>
     <a href='#collections'>
       <ion-icon class='text-white text-4xl animate-bounce cursor-pointer hover:opacity-60 transition duration-300' name='chevron-down-outline'></ion-icon>
@@ -29,17 +38,14 @@ layout: base.liquid
 </section>
 
 <!-- category -->
+{% assign count = categories.length %}
 <section class='my-4'>
-  <div class='grid grid-cols-1 grid-rows-3 gap-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-3 md:grid-rows-1 overflow-hidden'>
-    <div class='pb-2/3 relative sm:pb-full sm:row-span-2 md:col-span-1 md:row-span-1' data-aos='zoom-in' style='background-image: url({{categories.ao}});background-position: center;background-repeat: no-repeat;background-size: cover;'>
-      <div class='absolute w-full top-0 left-0 h-full bg-black bg-opacity-20 z-10'></div>
-    </div>
-    <div class='relative' data-aos='zoom-in' style='background-image: url({{categories.giay}});background-position: center;background-repeat: no-repeat;background-size: cover;'>
-      <div class='absolute w-full top-0 left-0 h-full bg-black bg-opacity-20 z-10'></div>
-    </div>
-    <div class='relative' data-aos='zoom-in' style='background-image: url({{categories.vay}});background-position: center;background-repeat: no-repeat;background-size: cover;'>
-      <div class='absolute w-full top-0 left-0 h-full bg-black bg-opacity-20 z-10'></div>
-    </div>
+  <div class='grid gap-4 sm:grid-cols-{{count}}'>
+    {% for item in categories %}
+      <div class='pb-2/3 relative sm:pb-full' data-aos='zoom-in' style='background-image: url({{item}});background-position: center;background-repeat: no-repeat;background-size: cover;'>
+        <div class='absolute w-full top-0 left-0 h-full bg-black bg-opacity-20 z-10'></div>
+      </div>
+    {% endfor %}
   </div>
 </section>
 

@@ -12,6 +12,25 @@ body {
   scroll-behavior: smooth;
 }
 
+.fading {
+  animation: aniamtion-fading 5s infinite;
+}
+
+@keyframes aniamtion-fading {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .logo-animation {
   animation: logoanimation 1s ease-in-out 0s alternate infinite;
 }

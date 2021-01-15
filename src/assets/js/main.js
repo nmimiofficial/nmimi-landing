@@ -38,7 +38,24 @@ function setActiveCollections(e, id) {
   }
 }
 
+var myIndex = 0;
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName('banner-slide');
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = 'none';
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = 'block';
+  setTimeout(carousel, 4000);
+}
+
 window.onload = function () {
+  carousel();
   var header = document.querySelector('header');
   var pathname = window.location.pathname;
   if (pathname == '/') {
