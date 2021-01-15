@@ -1,26 +1,24 @@
 ---
 layout: home.liquid
 title: Athleisure Never Looked Better.
-description:
-  The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
+description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
   with a cropped silhouette and raw-edge details paired with matching sweatpants.
 banner:
   video: false
   videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1610590394/landing/video_sna4xd.mp4
   slides:
-    - https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
-    - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_sdgvjc.webp
-    - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
-categories:
   - https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
   - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_sdgvjc.webp
   - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
-  - https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
+categories:
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_sdgvjc.webp
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
 collectionCallout:
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
   title: Fashion Collection
-  description:
-    The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
+  description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
     with a cropped silhouette and raw-edge details paired with matching sweatpants.
 event:
   open: true
@@ -31,7 +29,7 @@ event:
 about:
   title: Who we are?
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
-  description:
-    The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
+  description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
     with a cropped silhouette and raw-edge details paired with matching sweatpants.
+
 ---
