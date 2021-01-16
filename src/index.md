@@ -15,7 +15,7 @@ categories:
 - https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide3_ubmqaa.jpg
 - https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg
 collectionCallout:
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610590390/landing/shoes_dh2q8u.jpg
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1610780336/landing/a258a4f303c8f396aad9_hvlcz1.jpg
   title: Fashion Collection
   description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
     with a cropped silhouette and raw-edge details paired with matching sweatpants.
