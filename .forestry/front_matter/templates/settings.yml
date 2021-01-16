@@ -64,6 +64,13 @@ fields:
   - type: text
     name: address
     label: address
+  - name: address1
+    type: text
+    config:
+      required: false
+    label: address1
+    description: "<strong>add</strong>"
+    hidden: false
   - type: text
     name: phone
     label: phone
