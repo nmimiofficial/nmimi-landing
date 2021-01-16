@@ -61,15 +61,15 @@ fields:
   - type: file
     name: logoUrl
     label: logoUrl
-  - type: text
-    name: address
-    label: address
   - name: address1
     type: text
     config:
       required: false
     label: address1
     hidden: false
+  - type: text
+    name: address
+    label: address
   - type: text
     name: phone
     label: phone
