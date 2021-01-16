@@ -23,7 +23,7 @@ event:
   open: true
   description: ''
   time: 
-  title: ''
+  title: FALL/WINTER 2020
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610779557/landing/51bdf359a262523c0b73_lyoyvz.jpg
 about:
   title: Who we are?
