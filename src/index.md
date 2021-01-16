@@ -24,7 +24,7 @@ event:
   description: ''
   time: 
   title: ''
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610779071/landing/89be56af1494e4cabd85_fqtazy.jpg
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1610779557/landing/51bdf359a262523c0b73_lyoyvz.jpg
 about:
   title: Who we are?
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
