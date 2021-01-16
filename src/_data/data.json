@@ -5,6 +5,14 @@
       "label": "New Arrival",
       "items": [
         {
+          "name": "D",
+          "id": "",
+          "images": [
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610780336/landing/475824288413744d2d02_cessvw.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610780348/landing/35944309d43d24637d2c_c1mnah.jpg"
+          ]
+        },
+        {
           "name": "A",
           "id": "",
           "images": [
