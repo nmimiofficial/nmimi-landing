@@ -69,7 +69,6 @@ fields:
     config:
       required: false
     label: address1
-    description: "<strong>add</strong>"
     hidden: false
   - type: text
     name: phone
