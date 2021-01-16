@@ -27,7 +27,7 @@ event:
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610779557/landing/51bdf359a262523c0b73_lyoyvz.jpg
 about:
   title: Who we are?
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/326a1f72bf494f171658_onjbe4.jpg
   description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
     with a cropped silhouette and raw-edge details paired with matching sweatpants.
 
