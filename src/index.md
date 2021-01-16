@@ -1,6 +1,6 @@
 ---
 layout: home.liquid
-title: Athleisure Never Looked Better.
+title: SPRING LOOKBOOK.
 description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
   with a cropped silhouette and raw-edge details paired with matching sweatpants.
 banner:
