@@ -22,7 +22,7 @@ collectionCallout:
 event:
   open: true
   description: ''
-  time: 
+  time: 2021-01-04T00:00:00+07:00
   title: FALL/WINTER 2020
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610779557/landing/51bdf359a262523c0b73_lyoyvz.jpg
 about:
