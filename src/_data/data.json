@@ -37,10 +37,12 @@
       "label": "Best Seller",
       "items": [
         {
-          "name": "Ao chi do",
+          "name": "A",
           "id": "23214",
           "images": [
-            "https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg"
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/28071117b12c4172183d_dr7cd6.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/326a1f72bf494f171658_onjbe4.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1610780337/landing/a89afb705b4bab15f25a_s75yir.jpg"
           ]
         }
       ]
