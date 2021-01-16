@@ -7,9 +7,9 @@ banner:
   video: false
   videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1610590394/landing/video_sna4xd.mp4
   slides:
-  - https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide6_d3wdnz.jpg
-  - https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide4_hy6ghl.jpg
-  - https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/slide2_kelzte.jpg
+  - https://res.cloudinary.com/dab00oody/image/upload/v1610782641/landing/c60cdc734448b416ed59_zgm4hm.jpg
+  - https://res.cloudinary.com/dab00oody/image/upload/v1610782640/landing/8c8930efa8d4588a01c5_s5t7l0.jpg
+  - https://res.cloudinary.com/dab00oody/image/upload/v1610782640/landing/435ed7e14cdabc84e5cb_dgzmka.jpg
 categories:
 - https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/dd2798fc0cc7fc99a5d6_u6ud7o.jpg
 - https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/7cc8c31d5726a778fe37_obhwxn.jpg
