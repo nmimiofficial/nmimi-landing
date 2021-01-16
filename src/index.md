@@ -23,7 +23,7 @@ event:
   open: true
   description: Oh yeah
   time: 1/1/2020 - 1/1/2021
-  title: Big sale
+  title: FALL/WINTER 2020
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610779071/landing/89be56af1494e4cabd85_fqtazy.jpg
 about:
   title: Who we are?
