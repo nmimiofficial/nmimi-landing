@@ -24,7 +24,7 @@ event:
   description: Oh yeah
   time: 1/1/2020 - 1/1/2021
   title: Big sale
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610590392/landing/sale_n6z1o3.png
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1610779071/landing/89be56af1494e4cabd85_fqtazy.jpg
 about:
   title: Who we are?
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610590391/landing/shirt_o0xgau.jpg
