@@ -2,7 +2,7 @@
 layout: base.liquid
 ---
 <section class='min-h-screen relative overflow-hidden w-full'>
-  <div class='w-full h-full absolute z-10 bg-opacity-30 bg-black'>
+  <div class='w-full h-full absolute z-10'>
     <div class='container w-full h-full  flex flex-col justify-center items-start '>
       <div class='md:w-1/2'>
         <h1 class='text-3xl sm:text-5xl text-white font-semibold leading-tight mb-3' data-aos-duration='800' data-aos='fade-right'>
@@ -54,10 +54,14 @@ layout: base.liquid
   <section class='section pb-2/3 sm:pb-1/2 md:pb-1/3 relative ' data-aos-duration='1200' data-aos='flip-left'>
     <div class='absolute w-full h-full top-0' style='background-image: url({{event.image}}); background-position: center; background-repeat: no-repeat; background-size: cover;'></div>
     <div class='absolute w-full h-full top-0 bg-black bg-opacity-30 flex items-center justify-center flex-col px-8 sm:px-20 md:px-1/4 '>
-      <h3 class='text-4xl lg:text-6xl text-white mb-4 font-bold uppercase' data-aos-delay='200' data-aos='fade-down'>{{event.title}}</h3>
-      <p class='text-sm sm:text-md text-white mb-2'>{{event.description}}</p>
-      <p class='text-md sm:text-xl text-white lg:text-2xl mb-6'>{{event.time}}</p>
-      <span data-aos-delay='300' data-aos='fade-up'>
+      <h3 class='text-2xl sm:text-3xl lg:text-4xl text-white mb-4 font-bold uppercase' data-aos-delay='200' data-aos='fade-down'>{{event.title}}</h3>
+      {% if event.description %}
+        <p class='text-sm sm:text-md text-white mb-2'>{{event.description}}</p>
+      {% endif %}
+      {% if event.time %}
+        <p class='text-md sm:text-xl text-white lg:text-2xl mb-6'>{{event.time}}</p>
+      {% endif %}
+      <span class='mt-3' data-aos-delay='300' data-aos='fade-up'>
         <a class='duration-300 transition bg-primary border-primary hover:bg-secondary text-white font-medium py-3 px-10' href='#collections'>
           Shop Now
         </a>
@@ -70,13 +74,13 @@ layout: base.liquid
 <section class='section collection container flex flex-wrap overflow-hidden' id='product-intro'>
   <div class='w-full pb-full mb-16 md:mb-0 md:flex-1 md:pb-1/2 relative'>
     <div class='absolute inset-10'>
-      <img alt='' class='z-10 absolute w-full h-full object-cover object-center' data-aos='fade-right' src='{{collectionCallout.image}}' alt='colletions'>
+      <img alt='callout' class='z-10 absolute w-full h-full object-cover object-center' data-aos='fade-right' src='{{collectionCallout.image}}' alt='colletions'>
       <div class='absolute left-10 top-10 w-full h-full bg-yellow-100 p-10' data-aos-delay='300' data-aos='fade-up'></div>
     </div>
   </div>
   <div class='w-full md:flex-1 md:pl-20' data-aos-delay='600' data-aos='fade-left'>
-    <h3 class='text-2xl mb-10'>{{collectionCallout.title}}</h3>
-    <p class='text-md font-light opacity-70 mb-6'>{{collectionCallout.description}}</p>
+    <h3 class='text-2xl mb-3 sm:mb-6'>{{collectionCallout.title}}</h3>
+    <p class='text-md font-light opacity-70 mb-3 sm:mb-6'>{{collectionCallout.description}}</p>
     <a class='text-secondary border  px-4 py-2 border-secondary hover:bg-secondary hover:text-white transition duration-300' href='#collections'>Explore More</a>
   </div>
 </section>
@@ -98,8 +102,8 @@ layout: base.liquid
                 <a href="{{product.images[0]}}" data-lightbox="{{product.id}}" class='zoom-btn z-20 absolute top-4 right-4 h-8 w-8 flex justify-center items-center cursor-pointer leading-4 rounded-full bg-black bg-opacity-60 hover:opacity-60'>
                   <ion-icon class='text-xl text-white' name='expand-outline'></ion-icon>
                 </a>
-                <div class='description absolute z-10 bg-black bg-opacity-60 text-white bottom-0 right-0 left-0 px-4 py-2 opacity-0 transition duration-500'>
-                  <p class='text-md font-semibold'>{{product.name}}</p>
+                <div class='description absolute z-10 bg-black bg-opacity-60 text-white bottom-0 right-0 left-0 px-2 py-4 opacity-0 transition duration-500' style='min-height: 5rem;'>
+                  <p class='font-semibold'>{{product.name}}</p>
                 </div>
               </div>
             </div>
@@ -115,7 +119,7 @@ layout: base.liquid
 
 <section class='min-h-screen w-full relative' id='about'>
   <img alt='about' class='absolute w-full h-full top-0 left-0 object-center object-cover' src='{{about.image}}'>
-  <div class='absolute w-full h-full p-8 sm:p-10 bg-black bg-opacity-30'>
+  <div class='absolute w-full h-full p-8 sm:p-10'>
     <div class='w-full md:w-2/3 lg:w-1/2 h-full flex flex-col justify-center items-center m-auto'>
       <h4 class='text-3xl md:text-4xl mb-6 text-white'>{{about.title}}</h4>
       <p class='text-md text-white opacity-80 leading-10 relative italic'>

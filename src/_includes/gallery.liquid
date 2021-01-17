@@ -10,7 +10,7 @@ layout: base.liquid
   </div>
   <div class='gallery gap-4'>
     {% for item in data.gallery %}
-      <a data-lightbox='mygallery' data-aos='flip-left' href='{{item}}' class='inline-block relative mb-2 overflow-hidden'>
+      <a data-lightbox='mygallery' href='{{item}}' class='block relative mb-2 overflow-hidden'>
         <img alt='gallery' class='w-full' src='{{item}}'>
       </a>
     {% endfor %}
