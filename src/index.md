@@ -29,7 +29,7 @@ event:
 about:
   title: NMIMI
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/326a1f72bf494f171658_onjbe4.jpg
-  description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
-    with a cropped silhouette and raw-edge details paired with matching sweatpants.
+  description: Fashion is what you`re offered four times a year. And style is what
+    you choose.
 
 ---
