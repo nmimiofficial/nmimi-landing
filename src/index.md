@@ -1,8 +1,7 @@
 ---
 layout: home.liquid
 title: SPRING LOOKBOOK.
-description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
-  with a cropped silhouette and raw-edge details paired with matching sweatpants.
+description: Best choice for our new season.
 banner:
   video: false
   videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1610590394/landing/video_sna4xd.mp4
