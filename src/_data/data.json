@@ -5,16 +5,16 @@
       "label": "New Arrival",
       "items": [
         {
-          "name": "D",
-          "id": "d",
+          "name": "JADE SILK TOP - JADE SILK SKIRT",
+          "id": "",
           "images": [
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780336/landing/475824288413744d2d02_cessvw.jpg",
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780348/landing/35944309d43d24637d2c_c1mnah.jpg"
           ]
         },
         {
-          "name": "B",
-          "id": "23235",
+          "name": "OLIVIA BLOUSE - HIGH WAIST PANT",
+          "id": "",
           "images": [
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780332/landing/1d28e41e4425b47bed34_zusjui.jpg",
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780334/landing/4245fcb35c88acd6f599_vywlos.jpg",
@@ -22,8 +22,8 @@
           ]
         },
         {
-          "name": "C",
-          "id": "12124124",
+          "name": "PERRIS BLOUSE - HIGH WAIST PANT",
+          "id": "",
           "images": [
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780338/landing/da0c9674374fc7119e5e_ss9pw2.jpg",
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780332/landing/0debf0725049a017f958_lacvqn.jpg",
@@ -37,8 +37,8 @@
       "label": "Best Seller",
       "items": [
         {
-          "name": "A",
-          "id": "23214",
+          "name": "OLIVIA BLOUSE - LALAY SKIRT",
+          "id": "",
           "images": [
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/28071117b12c4172183d_dr7cd6.jpg",
             "https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/326a1f72bf494f171658_onjbe4.jpg",
