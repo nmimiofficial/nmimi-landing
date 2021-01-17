@@ -16,9 +16,10 @@ categories:
 - https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/0ca05176c54d35136c5c_mqoly6.jpg
 collectionCallout:
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610780336/landing/a258a4f303c8f396aad9_hvlcz1.jpg
-  title: Fashion Collection
-  description: The classic terry sweatsuit gets a glowup, thanks to this Alto hoodie
-    with a cropped silhouette and raw-edge details paired with matching sweatpants.
+  title: Spring/Summer Collection
+  description: Silk is one of the most widely-used fabric materials all over the world
+    when it comes to dressmaking. Hope you like it and feel free to leave comments
+    and feedback. Thanks!
 event:
   open: true
   description: ''
