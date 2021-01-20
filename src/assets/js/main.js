@@ -68,8 +68,8 @@ window.onload = function () {
 	} else {
 		header.classList.add('scrolled');
 	}
-
-	setTimeout(function () {
-		document.querySelector('#loading').classList.add('fade-out');
-	}, 1200);
 };
+
+setTimeout(function () {
+	document.querySelector('#loading').classList.add('fade-out');
+}, 1200);
