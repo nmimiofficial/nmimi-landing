@@ -10,13 +10,10 @@ banner:
   - https://res.cloudinary.com/dab00oody/image/upload/v1611245835/landing/686fb5042d3fdd61842e_dm2rcv.jpg
   - https://res.cloudinary.com/dab00oody/image/upload/v1611245833/landing/435ed7e14cdabc84e5cb_1_pvuvnh.jpg
 categories:
-- https://res.cloudinary.com/dab00oody/image/upload/v1611203699/landing/8c8930efa8d4588a01c5_egptsk.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1611203680/landing/435ed7e14cdabc84e5cb_quspnh.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1611203688/landing/3851267fe5b615e84ca7_qbr1cb.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/dd2798fc0cc7fc99a5d6_u6ud7o.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/7cc8c31d5726a778fe37_obhwxn.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/700333c0a7fb57a50eea_vigaof.jpg
-- https://res.cloudinary.com/dab00oody/image/upload/v1610782125/landing/0ca05176c54d35136c5c_mqoly6.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1611245854/landing/dd2798fc0cc7fc99a5d6_tup0o2.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1611245823/landing/7cc8c31d5726a778fe37_qkmnp3.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1611245840/landing/700333c0a7fb57a50eea_uuqggn.jpg
+- https://res.cloudinary.com/dab00oody/image/upload/v1611245816/landing/0ca05176c54d35136c5c_decbbl.jpg
 collectionCallout:
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610780336/landing/a258a4f303c8f396aad9_hvlcz1.jpg
   title: Spring/Summer Collection
