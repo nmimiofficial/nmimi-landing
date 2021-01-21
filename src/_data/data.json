@@ -55,6 +55,21 @@
       "label": "Best Seller",
       "items": [
         {
+          "name": "BRITISH STYLE",
+          "id": "",
+          "images": [
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203693/landing/5d81b71376da8684dfcb_umomdz.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203685/landing/4308d9634058b006e949_gkb8jk.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203694/landing/b65367cea60756590f16_ozvtgv.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203694/landing/b48f7a16bbdf4b8112ce_t13cdo.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203705/landing/41d097480f73ff2da662_yuqdfj.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203703/landing/15be0837c9fe39a060ef_ouh9ti.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203700/landing/e7ebb286724f8211db5e_krxrgq.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203692/landing/5d77c71807d1f78faec0_hnzsvx.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203687/landing/61059d775dbeade0f4af_tieies.jpg"
+          ]
+        },
+        {
           "name": "OLIVIA BLOUSE - LALAY SKIRT",
           "id": "A104",
           "images": [
