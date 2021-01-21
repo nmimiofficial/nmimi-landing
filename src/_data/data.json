@@ -55,6 +55,19 @@
       "label": "Best Seller",
       "items": [
         {
+          "name": "NICHE DRESS",
+          "id": "A106",
+          "images": [
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203689/landing/32120924caed3ab363fc_v7dsnk.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203701/landing/ed47ed782eb1deef87a0_rnznby.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203704/landing/27f4a2c86101915fc810_xmywqn.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203684/landing/1d77b4b3747a8424dd6b_d1jhtx.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203692/landing/4c8ee5207e1b8e45d70a_w8md9h.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203705/landing/46ffcad4091df943a00c_hvphiu.jpg",
+            "https://res.cloudinary.com/dab00oody/image/upload/v1611203681/landing/451f533990f060ae39e1_bhsdk4.jpg"
+          ]
+        },
+        {
           "name": "BRITISH STYLE",
           "id": "A105",
           "images": [
