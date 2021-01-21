@@ -25,7 +25,7 @@ event:
   description: ''
   time: 
   title: FALL/WINTER 2020
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610779557/landing/51bdf359a262523c0b73_lyoyvz.jpg
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1611245829/landing/51bdf359a262523c0b73_jmf1sh.jpg
 about:
   title: NMIMI
   image: https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/326a1f72bf494f171658_onjbe4.jpg
