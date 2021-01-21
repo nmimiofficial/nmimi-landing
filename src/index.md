@@ -28,7 +28,7 @@ event:
   image: https://res.cloudinary.com/dab00oody/image/upload/v1611245829/landing/51bdf359a262523c0b73_jmf1sh.jpg
 about:
   title: NMIMI
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610780335/landing/326a1f72bf494f171658_onjbe4.jpg
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1611245859/landing/f7fd0d96cc5f3c01654e_ghuwim.jpg
   description: Fashion is what you`re offered four times a year. And style is what
     you choose.
 
