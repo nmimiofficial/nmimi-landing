@@ -15,7 +15,7 @@ categories:
 - https://res.cloudinary.com/dab00oody/image/upload/v1611245840/landing/700333c0a7fb57a50eea_uuqggn.jpg
 - https://res.cloudinary.com/dab00oody/image/upload/v1611245816/landing/0ca05176c54d35136c5c_decbbl.jpg
 collectionCallout:
-  image: https://res.cloudinary.com/dab00oody/image/upload/v1610780336/landing/a258a4f303c8f396aad9_hvlcz1.jpg
+  image: https://res.cloudinary.com/dab00oody/image/upload/v1611245844/landing/a258a4f303c8f396aad9_hcerk7.jpg
   title: Spring/Summer Collection
   description: Silk is one of the most widely-used fabric materials all over the world
     when it comes to dressmaking. Hope you like it and feel free to leave comments
