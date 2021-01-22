@@ -140,7 +140,7 @@ layout: base.liquid
     <div class='grid-col px-2 flex-1 grid-col--3 hidden md:block'></div>
     <div class='grid-col px-2 flex-1 grid-col--4 hidden lg:block'></div>
     {% for item in data.gallery %}
-      {% if forloop.index > 10 %}
+      {% if forloop.index > 12 %}
         {% break %}
       {% else %}
         <a data-lightbox='mygallery' href='{{settings.cloudinary_url}}/fl_progressive,q_auto:best{{item}}' data-aos='flip-left' class='grid-item mb-4 block overflow-hidden'>
