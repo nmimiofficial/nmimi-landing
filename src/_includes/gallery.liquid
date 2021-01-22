@@ -8,10 +8,15 @@ layout: base.liquid
       <span class='text-secondary'>Home</span>
     </a>
   </div>
-  <div class='gallery gap-4'>
+  <div class='gallery flex'>
+    <!-- columns -->
+    <div class='grid-col px-2 flex-1 grid-col--1'></div>
+    <div class='grid-col px-2 flex-1 grid-col--2 hidden sm:block'></div>
+    <div class='grid-col px-2 flex-1 grid-col--3 hidden md:block'></div>
+    <div class='grid-col px-2 flex-1 grid-col--4 hidden lg:block'></div>
     {% for item in data.gallery %}
-      <a data-lightbox='mygallery' href='{{item}}' class='block relative mb-2 overflow-hidden'>
-        <img alt='gallery' class='w-full' src='{{item}}'>
+      <a data-lightbox='mygallery' data-aos='flip-left' href='{{settings.cloudinary_url}}/fl_progressive,q_auto:best{{item}}' class='grid-item mb-4 block overflow-hidden'>
+        <img alt='gallery' class='w-full' src='{{settings.cloudinary_url}}/fl_progressive,q_auto:best{{item}}'>
       </a>
     {% endfor %}
   </div>

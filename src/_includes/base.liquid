@@ -19,7 +19,7 @@
     <meta content='en_US' property='og:locale'>
     <meta property='og:title' content="{{ settings.meta.title }}">
     <meta property='og:description' content="{{ settings.meta.description }}">
-    <meta property='og:image' content="{{ settings.meta.imgSrc }}">
+    <meta property='og:image' content="{{settings.cloudinary_url}}{{ settings.meta.imgSrc }}">
     <meta content='1280' property='og:image:width'>
     <meta content='640' property='og:image:height'>
     <meta property='og:image:alt' content="{{ settings.meta.imgAtl }}">
@@ -29,19 +29,19 @@
     <meta property='twitter:url' content="{{ settings.meta.siteUrl }}">
     <meta property='twitter:title' content="{{ settings.meta.title }}">
     <meta property='twitter:description' content="{{ settings.meta.description }}">
-    <meta property='twitter:image' content="{{ settings.meta.imgSrc }}">
+    <meta property='twitter:image' content="{{settings.cloudinary_url}}{{ settings.meta.imgSrc }}">
     <meta property='twitter:image:alt' content="{{ settings.meta.imgAlt }}">
   </head>
   <body>
     <div class='fixed inset-0 bg-white flex items-center justify-center' id='loading' style='z-index: 999999;'>
-      <img src="{{settings.footer.logoUrl}}" class='h-10 logo-animation' alt='log0'>
+      <img src="{{settings.cloudinary_url}}/w_200{{settings.footer.logoUrl}}" class='h-10 logo-animation' alt='log0'>
     </div>
     <header class='fixed w-full z-50 transition duration-500'>
       <!-- menu -->
       <div class='container z-10 left-0 right-0 top-0 flex justify-between py-6 items-baseline'>
         <div>
           <a class='cursor-pointer' href='/'>
-            <img alt='logo' class='h-8' src='{{settings.header.logoWhiteUrl}}'/>
+            <img alt='logo' class='h-8' src='{{settings.cloudinary_url}}/w_200{{settings.header.logoWhiteUrl}}'/>
           </a>
         </div>
         <ul class='hidden sm:flex' id='menu'>
@@ -92,7 +92,7 @@
     <footer class='bg-yellow-100 w-full relative footer-area py-6 px-8 sm:py-10 md:py-16 overflow-hidden' id='contact'>
       <div class='container mx-auto max-w-screen-sm'>
         <div class='text-center mb-10'>
-          <img alt='logo' class='h-6 sm:h-8 inline-block' src='{{settings.footer.logoUrl}}'/>
+          <img alt='logo' class='h-6 sm:h-8 inline-block' src='{{settings.cloudinary_url}}/w_300{{settings.footer.logoUrl}}'/>
         </div>
         <div class='flex flex-col mb-3 text-md text-gray-500 font-light'>
           <p>{{settings.footer.address}}</p>
@@ -111,6 +111,7 @@
     <script src='https://unpkg.com/ionicons@5.2.3/dist/ionicons.js'></script>
     <script src='/assets/lightbox-plus-jquery.min.js'></script>
     <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+    <script src='https://unpkg.com/colcade@0/colcade.js'></script>
     <script src='/assets/js/main.js'></script>
   </body>
 </html>

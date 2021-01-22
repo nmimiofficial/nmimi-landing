@@ -51,24 +51,26 @@ function carousel() {
 		myIndex = 1;
 	}
 	x[myIndex - 1].style.display = 'block';
-	setTimeout(carousel, 4000);
+	setTimeout(carousel, 10000);
 }
-
-window.onload = function () {
-	var header = document.querySelector('header');
-	var pathname = window.location.pathname;
-	if (pathname == '/') {
-		if (window.scrollY > 100) {
-			header.classList.add('scrolled');
-		}
-		window.addEventListener('scroll', function () {
-			header.classList.toggle('scrolled', window.scrollY > 100);
-		});
-		carousel();
-	} else {
+var header = document.querySelector('header');
+var pathname = window.location.pathname;
+if (pathname == '/') {
+	if (window.scrollY > 100) {
 		header.classList.add('scrolled');
 	}
-};
+	window.addEventListener('scroll', function () {
+		header.classList.toggle('scrolled', window.scrollY > 100);
+	});
+	carousel();
+} else {
+	header.classList.add('scrolled');
+}
+
+var colc = new Colcade('.gallery', {
+	columns: '.grid-col',
+	items: '.grid-item',
+});
 
 setTimeout(function () {
 	document.querySelector('#loading').classList.add('fade-out');
