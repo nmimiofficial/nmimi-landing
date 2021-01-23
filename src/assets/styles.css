@@ -13,7 +13,7 @@ body {
 }
 
 .fading {
-	animation: aniamtion-fading 10.5s infinite;
+	animation: aniamtion-fading 6.5s infinite;
 }
 
 @keyframes aniamtion-fading {
@@ -23,7 +23,7 @@ body {
 	10% {
 		opacity: 1;
 	}
-	90% {
+	80% {
 		opacity: 1;
 	}
 	100% {

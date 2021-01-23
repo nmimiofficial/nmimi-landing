@@ -51,7 +51,7 @@ function carousel() {
 		myIndex = 1;
 	}
 	x[myIndex - 1].style.display = 'block';
-	setTimeout(carousel, 10000);
+	setTimeout(carousel, 6000);
 }
 var header = document.querySelector('header');
 var pathname = window.location.pathname;
