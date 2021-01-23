@@ -60,10 +60,6 @@ body {
 	}
 }
 
-.container {
-	max-width: 1024px;
-}
-
 .section {
 	@apply py-8 sm:py-16;
 }
