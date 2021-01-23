@@ -61,7 +61,7 @@ body {
 }
 
 .section {
-	@apply py-8 sm:py-16;
+	@apply py-8 sm:py-16 md:py-32 lg:py-44;
 }
 
 .socials > a:last-child {
