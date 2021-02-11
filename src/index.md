@@ -24,8 +24,8 @@ event:
   open: true
   description: ''
   time: 
-  title: FALL/WINTER 2020
-  image: "/v1611245829/landing/51bdf359a262523c0b73_jmf1sh.jpg"
+  title: SPRING HOLIDAY
+  image: "/v1613017772/landing/1177EF86-11FD-4712-AD56-A9A7F55B2250_rgcsem.jpg"
 about:
   title: NMIMI
   image: "/v1611245859/landing/f7fd0d96cc5f3c01654e_ghuwim.jpg"
