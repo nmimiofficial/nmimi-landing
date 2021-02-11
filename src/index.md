@@ -10,10 +10,10 @@ banner:
   - "/v1611245835/landing/686fb5042d3fdd61842e_dm2rcv.jpg"
   - "/v1611245833/landing/435ed7e14cdabc84e5cb_1_pvuvnh.jpg"
 categories:
-- "/v1611245854/landing/dd2798fc0cc7fc99a5d6_tup0o2.jpg"
-- "/v1611245823/landing/7cc8c31d5726a778fe37_qkmnp3.jpg"
-- "/v1611245840/landing/700333c0a7fb57a50eea_uuqggn.jpg"
-- "/v1611245816/landing/0ca05176c54d35136c5c_decbbl.jpg"
+- "/v1613017779/landing/IMG_3090_hcb0vu.jpg"
+- "/v1613017777/landing/IMG_3084_tdjddl.jpg"
+- "/v1613017778/landing/IMG_3042_q3uny9.jpg"
+- "/v1613017778/landing/IMG_3041_rkec1g.jpg"
 collectionCallout:
   image: "/v1611245844/landing/a258a4f303c8f396aad9_hcerk7.jpg"
   title: Spring/Summer Collection
