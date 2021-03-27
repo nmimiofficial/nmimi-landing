@@ -4,7 +4,7 @@ title: SPRING LOOKBOOK.
 description: Best choice for our new season.
 banner:
   video: true
-  videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1616756244/landing/video-output-3455C21A-63F4-40D2-8CEA-D6501E31BA58_brqee8.mov
+  videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1616814651/landing/1_ytjxj3.mp4
   slides: []
 categories:
 - "/v1613017779/landing/IMG_3090_hcb0vu.jpg"
