@@ -3,12 +3,9 @@ layout: home.liquid
 title: SPRING LOOKBOOK.
 description: Best choice for our new season.
 banner:
-  video: false
-  videoUrl: ''
-  slides:
-  - "/v1611245824/landing/8c8930efa8d4588a01c5_1_hw06fk.jpg"
-  - "/v1611245835/landing/686fb5042d3fdd61842e_dm2rcv.jpg"
-  - "/v1611245833/landing/435ed7e14cdabc84e5cb_1_pvuvnh.jpg"
+  video: true
+  videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1616756244/landing/video-output-3455C21A-63F4-40D2-8CEA-D6501E31BA58_brqee8.mov
+  slides: []
 categories:
 - "/v1613017779/landing/IMG_3090_hcb0vu.jpg"
 - "/v1613017777/landing/IMG_3084_tdjddl.jpg"
