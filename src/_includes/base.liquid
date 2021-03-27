@@ -34,20 +34,20 @@
   </head>
   <body>
     <div class='fixed inset-0 bg-white flex items-center justify-center' id='loading' style='z-index: 999999'>
-      <img src="{{ settings.cloudinary_url }}/w_200{{ settings.footer.logoUrl }}" class='h-10 logo-animation' alt='log0'/>
+      <img src="{{ settings.cloudinary_url }}/w_200,c_limit,fl_progressive/q_auto:good{{ settings.footer.logoUrl }}" class='h-10 logo-animation' alt='log0'/>
     </div>
     <header class='fixed w-full z-50 transition duration-500'>
       <!-- menu -->
       <div class='container z-10 left-0 right-0 top-0 flex justify-between py-6 items-baseline'>
         <div>
           <a class='cursor-pointer' href='/'>
-            <img alt='logo' class='h-8' src="{{ settings.cloudinary_url }}/w_200{{ settings.header.logoWhiteUrl }}"/>
+            <img alt='logo' class='h-8' src="{{ settings.cloudinary_url }}/w_200,c_limit,fl_progressive/q_auto:good{{ settings.header.logoWhiteUrl }}"/>
           </a>
         </div>
         <ul class='hidden sm:flex' id='menu'>
           {% for item in settings.header.menu %}
             <li class='px-4'>
-              <a class='hover:text-primary transition duration-300 text-white' href="{{ settings.meta.siteUrl | append: item.url }}">{{ item.name }}</a>
+              <a class='hover:text-primary transition duration-300 text-white' href="{{ item.url }}">{{ item.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -71,7 +71,7 @@
           <ul class='mb-6' id='nav-item'>
             {% for item in settings.header.menu %}
               <li class='px-4 py-2'>
-                <a class='hover:text-primary transition duration-300' href="{{ settings.meta.siteUrl | append: item.url }}" onclick='toggleMenu()'>{{ item.name }}</a>
+                <a class='hover:text-primary transition duration-300' href="{{ item.url }}" onclick='toggleMenu()'>{{ item.name }}</a>
               </li>
             {% endfor %}
           </ul>
@@ -92,7 +92,7 @@
     <footer class='bg-black bg-opacity-60 w-full relative footer-area section px-8 overflow-hidden text-white' id='contact'>
       <div class='container mx-auto max-w-screen-sm'>
         <div class='text-center mb-10'>
-          <img alt='logo' class='h-10 sm:h-12 inline-block' src="{{ settings.cloudinary_url }}/w_300{{ settings.header.logoWhiteUrl }}"/>
+          <img alt='logo' class='h-10 sm:h-12 inline-block' src="{{ settings.cloudinary_url }}/w_300,c_limit,fl_progressive/q_auto:good{{ settings.header.logoWhiteUrl }}"/>
         </div>
         <div class='flex flex-col mb-3 text-md font-light'>
           <p>{{ settings.footer.address }}</p>

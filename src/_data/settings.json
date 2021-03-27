@@ -3,19 +3,19 @@
 		"menu": [
 			{
 				"name": "Home",
-				"url": "#"
+				"url": "/"
 			},
 			{
 				"name": "Collections",
-				"url": "#collections"
+				"url": "/#collections"
 			},
 			{
 				"name": "About",
-				"url": "#about"
+				"url": "/#about"
 			},
 			{
 				"name": "Gallery",
-				"url": "#gallery"
+				"url": "/#gallery"
 			}
 		],
 		"logoWhiteUrl": "/v1610590390/landing/logowhite_jmhtdt.png",
