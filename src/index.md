@@ -1,11 +1,15 @@
 ---
 layout: home.liquid
-title: SPRING LOOKBOOK.
+title: SUMMER VIBE
 description: Best choice for our new season.
 banner:
-  video: true
-  videoUrl: https://res.cloudinary.com/dab00oody/video/upload/v1616814651/landing/1_ytjxj3.mp4
-  slides: []
+  video: false
+  videoUrl: ''
+  slides:
+  - "/v1617970543/landing/IMG_7163-min_wqojcb.jpg"
+  - "/v1617970539/landing/IMG_7154-min_sbt4pj.jpg"
+  - "/v1617970538/landing/IMG_7108-min_kjqzdw.jpg"
+  - "/v1617970537/landing/IMG_7124-min_zamgcn.jpg"
 categories:
 - "/v1613017779/landing/IMG_3090_hcb0vu.jpg"
 - "/v1613017777/landing/IMG_3084_tdjddl.jpg"
