@@ -11,13 +11,13 @@ banner:
   - "/v1617970538/landing/IMG_7108-min_kjqzdw.jpg"
   - "/v1617970537/landing/IMG_7124-min_zamgcn.jpg"
 categories:
-- "/v1613017779/landing/IMG_3090_hcb0vu.jpg"
-- "/v1613017777/landing/IMG_3084_tdjddl.jpg"
-- "/v1613017778/landing/IMG_3042_q3uny9.jpg"
-- "/v1613017778/landing/IMG_3041_rkec1g.jpg"
+- "/v1617970547/landing/IMG_8442-min_dbwqo7.jpg"
+- "/v1617970547/landing/IMG_8440-min_s2rdoe.jpg"
+- "/v1617970547/landing/IMG_8437-min_o4f5w7.jpg"
+- "/v1617970546/landing/IMG_8436-min_tmp5kz.jpg"
 collectionCallout:
-  image: "/v1611245844/landing/a258a4f303c8f396aad9_hcerk7.jpg"
-  title: Spring/Summer Collection
+  image: "/v1617970541/landing/IMG_7189-min_ebb6u5.jpg"
+  title: MINI COLLECTION
   description: Silk is one of the most widely-used fabric materials all over the world
     when it comes to dressmaking. Hope you like it and feel free to leave comments
     and feedback. Thanks!
