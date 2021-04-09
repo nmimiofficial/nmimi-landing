@@ -26,7 +26,7 @@ event:
   description: ''
   time: 
   title: FOR SUMMER
-  image: "/v1613017793/landing/IMG_3727_pcjyk4.jpg"
+  image: "/v1617970577/landing/IMG_8463-min_jetswh.jpg"
 about:
   title: NMIMI
   image: "/v1611245853/landing/d096c293045af404ad4b_ealo0g.jpg"
