@@ -25,8 +25,8 @@ event:
   open: true
   description: ''
   time: 
-  title: SPRING HOLIDAY
-  image: "/v1613017772/landing/1177EF86-11FD-4712-AD56-A9A7F55B2250_rgcsem.jpg"
+  title: FOR SUMMER
+  image: "/v1613017793/landing/IMG_3727_pcjyk4.jpg"
 about:
   title: NMIMI
   image: "/v1613021150/landing/1cbbb9a8f9fc0aa253ed_kdd9r5.jpg"
