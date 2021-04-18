@@ -29,7 +29,7 @@ event:
   image: "/v1613017769/landing/1R3A8475_vzlxwu.jpg"
 about:
   title: NMIMI
-  image: "/v1611245853/landing/d096c293045af404ad4b_ealo0g.jpg"
+  image: "/v1613023839/landing/0e015283b4d747891ec6_tzeftm.jpg"
   description: Fashion is what you`re offered four times a year. And style is what
     you choose.
 
