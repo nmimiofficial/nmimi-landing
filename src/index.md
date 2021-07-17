@@ -7,9 +7,9 @@ banner:
   videoUrl: ''
   slides:
   - "/v1617970543/landing/IMG_7163-min_wqojcb.jpg"
-  - "/v1617970539/landing/IMG_7154-min_sbt4pj.jpg"
   - "/v1617970538/landing/IMG_7108-min_kjqzdw.jpg"
-  - "/v1617970537/landing/IMG_7124-min_zamgcn.jpg"
+  - "/v1611245823/landing/7cc8c31d5726a778fe37_qkmnp3.jpg"
+  - "/v1613017769/landing/IMG_3657_izucri.jpg"
 categories:
 - "/v1617970547/landing/IMG_8442-min_dbwqo7.jpg"
 - "/v1617970547/landing/IMG_8440-min_s2rdoe.jpg"
